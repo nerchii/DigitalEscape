@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♡♡ Digital escape ♡♡</title>
+    <style>
+        body {
+            background-image: url(https://i.postimg.cc/8PJRGKDG/whitegrain.gif);
+            font-family: "Gill Sans", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+
+        }
+        footer{
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            align-content: end;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        li {
+            display: inline;
+            padding: 10px;
+        }
+        p {
+            display: inline-flex;
+            text-align: justify;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        .container {
+            position: relative;
+            width: 940px;
+            padding: 20px;
+            background-image: url("https://nerrchii.neocities.org/resources/paper.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 0;
+            height: 1253px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bunny {
+            pointer-events: none;
+            position: absolute ;
+            z-index: 1;
+            width: 1000px;
+            height: auto;
+            margin-left: -60px;
+            margin-top: 120px;
+            image-rendering: optimizeSpeed;
+        }
+        .ncont {
+            background-image: url("https://i.postimg.cc/Y9f1b9g5/note1.jpg");
+            position: absolute;
+            margin-top: 193px;
+            margin-left: 278px;
+            width: 620px;
+            height: 765px;
+            align-content: center;
+            overflow: scroll;
+            scrollbar-width: none;
+        }
+
+        .navcont {
+            overflow: hidden;
+            position: absolute;
+            margin-top: 160px;
+            margin-left: 930px;
+            width: 300px;
+            height: 760px;
+        }
+
+        .con {
+            padding: 15px;
+        }
+
+        .button1 {
+            background-image: url("https://nerrchii.neocities.org/resources/b1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            width: 180px;
+            height: 180px;
+            border: 0px;
+            background-color: transparent;
+            pointer-events: fill;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+        }
+        .button2 {
+            background-image: url("https://nerrchii.neocities.org/resources/b2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            width: 180px;
+            height: 180px;
+            border: 0px;
+            background-color: transparent;
+            pointer-events: fill;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+        }
+        .button1:active {
+            transform: scale(0.95);
+        }
+        .button2:active {
+            transform: scale(0.95);
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<header>
+</header>
+<div class="container">
+    <img class="bunny" src="https://nerrchii.neocities.org/resources/bunny.png" alt="bunni">
+    <div class="ncont">
+        <div class="con">
+            <h1>♡♡ WELCOME T♡ MY BLOG ♡♡</h1>
+
+            <section id="about">
+                <h2>♡ABOUT♡</h2>
+                <h3>Sorry for the lack of content, still under construction :3</h3>
+
+                <p>
+                    This is just a placeholder text that chatgpt generated for now, a starting point for what will eventually be a much more personal and expansive space. The idea behind the site is simple—it will serve as a place for me to keep a digital diary, share drawings, and post photos. These are the first three sections that are up and running, but I have plans to expand and add more over time.
+
+                    The diary section will be where I jot down thoughts, reflections, and whatever else I want to remember. The drawings section will showcase some of my sketches, designs, and creative work, while the photos section will feature images that I want to share—whether they’re personal snapshots or moments I find interesting.
+                    Eventually, I plan to add new sections, experiment with different content, and see where this space can go. For now, though, this is just the beginning—a placeholder as I figure out what I want this site to become. So, feel free to check back and see how it evolves.
+                </p>
+            </section>
+
+            <section id="preview">
+                <h2>♡DRAWING PREVIEW♡</h2>
+                <span> Some drawings ive made, more can be found on the <a href="drawings">drawings site</a>.</span>
+                <hr class="dashed">
+                <div>
+                    <img src=art/2.jpg
+                         height="100px"
+                    >
+
+                    <img src=art/1.jpg
+                         height="100px"
+                    >
+
+                    <img src=art/3.jpg
+                         height="100px"
+                    >
+                </div>
+
+            </section>
+
+            <section id ="contact">
+                <h2>♡CONTACT♡</h2>
+                <ul>
+                    <li>
+                        ♡EMAIL♡ neragrgic@proton.me
+                    </li>
+                    <li>
+                        <a href="https://github.com/nerchii">♡GIT♡</a>
+                    </li>
+                </ul>
+            </section>
+            <section id ="other">
+                <h2>♡OTHER♡</h2>
+                Still working on this site :3
+            </section>
+
+            <footer>
+                <p>hosted on neocities, made 27.2.2025 :)</p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="navcont">
+        <div class="button1" onclick="window.location.href='https://nerrchii.neocities.org/drawings'" >
+          <h2>♡drawings♡</h2>
+        </div>
+        <div class="button2" onclick="window.location.href='https://nerrchii.neocities.org/diary'" >
+            <h2>♡diary♡</h2>
+        </div>
+        <div class="button1" onclick="window.location.href='https://nerrchii.neocities.org/photos'" >
+            <h2>♡photos♡</h2>
+        </div>
+        <div class="button1"><h2>♡</h2></div>
+
+    </div>
+
+    </div>
+
+</body>
+</html>
