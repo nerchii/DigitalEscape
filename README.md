@@ -1,2 +1,2 @@
 # site
-:3
+very cool site, trust me :)
