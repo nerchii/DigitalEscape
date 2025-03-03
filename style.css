@@ -99,6 +99,7 @@ p {
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    user-select: none;
 }
 .button2 {
     background-image: url("https://nerrchii.neocities.org/resources/b2.png");
@@ -115,6 +116,7 @@ p {
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    user-select: none;
 }
 .button1:active {
     transform: scale(0.95);
