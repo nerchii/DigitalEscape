@@ -1,0 +1,15 @@
+body {
+    background-color: white;
+    font-family: "Gill Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.container{
+    background-image:
+}
