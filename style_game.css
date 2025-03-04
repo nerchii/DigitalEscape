@@ -21,6 +21,9 @@ body {
     background-size: contain;
     margin: 0 auto;
     display: flex;
+    image-rendering: optimizeSpeed;
+    pointer-events: none;
+
 }
 
 .game_container{
