@@ -82,6 +82,9 @@ p {
 
 .con {
     padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+
 }
 
 .button1 {
