@@ -12,8 +12,47 @@
 <body>
 <header>
 </header>
+<img class="bunny" src="https://nerrchii.neocities.org/resources/draw_bun.png" alt="bunni" style=" margin-bottom: 133px; margin-right: 100px " >
+
+<div class="draggable_div" style="top: 60px; left: 210px;">
+    <div class="draggable_div_header" ></div>
+    <div class="draggable_div_container">
+        <span>
+            <img height="46px" src="https://i.postimg.cc/HnV6rb4C/besteyes3.gif"/>
+            <img height="46px" src="https://i.postimg.cc/bJ66YmnT/best-viewed-with-monitor.gif"/>
+            <img height="46px" src="https://i.postimg.cc/brW3kd3S/blink-0.gif"/>
+            <img height="46px" src="https://i.postimg.cc/g0ss4ggW/devils-button.gif"/>
+            <img height="46px" src="https://i.postimg.cc/hj3rRfFZ/fckgoogle.gif"/>
+            <img height="46px" src="https://i.postimg.cc/DZzgN1Nb/firefoxnow.gif"/>
+            <img height="46px" src="https://i.postimg.cc/FHjDkrc1/linuxnow2.gif"/>
+            <img height="46px" src="https://i.postimg.cc/BnWmvLjd/microsoft-stop.gif"  />
+            <img height="46px" src="https://i.postimg.cc/ryPhvYMy/piracy.gif"/>
+            <img height="46px" src="https://i.postimg.cc/TY5kGq3V/webpassion.gif"/>
+        </span>
+    </div>
+</div>
+
+<div class="draggable_div" style=
+        "bottom: 35px;
+        right: 50px;
+        transform: scale(0.87);
+        transform: rotate(2deg);" >
+    <div class="draggable_div_header"></div>
+    <div class="draggable_div_container">
+        <iframe
+                src="https://i.postimg.cc/28fWKp1N/3a2-478009096.gif"
+                style="width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                border: none;">
+
+        </iframe>
+    </div>
+</div>
+
 <div class="container">
-    <img class="bunny" src="https://nerrchii.neocities.org/resources/draw_bun.png" alt="bunni">
     <div class="ncont">
         <h1>♡♡ DRAWINGS ♡♡</h1>
         <div class="row">
@@ -43,8 +82,53 @@
         </div>
 
     </div>
-
-
 </div>
+
+<script>
+    function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+
+        if (elmnt.querySelector(".draggable_div_header")) {
+            elmnt.querySelector(".draggable_div_header").onmousedown = dragMouseDown;
+        } else {
+            elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+
+            document.onmouseup = closeDragElement;
+            document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+
+        function closeDragElement() {
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+    }
+
+    document.querySelectorAll(".draggable_div").forEach(function (element) {
+        dragElement(element);
+    });
+
+</script>
+
 </body>
 </html>
