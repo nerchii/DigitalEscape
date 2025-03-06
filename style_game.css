@@ -35,13 +35,19 @@ body {
 .gif_container {
     overflow: hidden;
     position: absolute;
-    margin-top: 350px;
+    margin-top: 370px;
     margin-left: 1460px;
     width: 300px;
     height: 600px;
     z-index: -1;
-
+    animation: lavalamp 10s infinite ease-in-out;
 }
+@keyframes lavalamp {
+    0%, 100% { top: 0px; }
+    25%  { top: 80px; }
+    75%  { top: 20px; }
+}
+
 .button1 {
     background-image: url("https://nerrchii.neocities.org/resources/b1.png");
     background-size: cover;
