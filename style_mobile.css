@@ -11,34 +11,7 @@ body {
     overflow: hidden;
 
 }
-.draggable_div {
-    position: absolute;
-    z-index: 9;
-    background-image: url("resources/Notepad .png");
-    image-rendering: optimizeSpeed;
-    background-size: cover;
-    background-size: contain;
-    text-align: center;
-    width: 295px;
-    height: 400px;
-    padding: 10px;
 
-}
-
-.draggable_div_container {
-    z-index: 11;
-    margin-top: -25px;
-    width: 297px;
-    height: 367px;
-}
-
-.draggable_div_header {
-    padding: 30px;
-    cursor: move;
-    z-index: 10;
-    color: black;
-    font-weight: bold;
-}
 
 footer{
     text-align: center;
@@ -70,41 +43,32 @@ p {
 }
 .container {
     position: absolute;
-    width: 940px;
-    padding: 20px;
+    width: 620px;
+    padding: -20px;
+    margin-left: -20px;
     background-image: url("https://i.postimg.cc/rFMYjNNn/paper.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 0;
     height: 1253px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+
 }
 
-.bunny {
-    pointer-events: none;
-    position: absolute ;
-    z-index: 15;
-    width: 1000px;
-    height: auto;
-    margin-left: -60px;
-    margin-top: 120px;
-    image-rendering: optimizeSpeed;
-}
 .ncont {
     background-image : url("https://i.postimg.cc/Y9f1b9g5/note1.jpg");
     position: absolute;
-    margin-top: 193px;
-    margin-left: 278px;
-    width: 620px;
-    height: 765px;
+    margin-top: 350px;
+    margin-left: 190px;
+    width: 390px;
+    height: 485px;
     align-content: center;
     overflow: scroll;
     scrollbar-width: none;
-}
 
+}
 
 .con {
     padding: 15px;
