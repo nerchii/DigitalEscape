@@ -11,6 +11,35 @@ body {
     overflow: hidden;
 
 }
+.draggable_div {
+    position: absolute;
+    z-index: 9;
+    background-image: url("resources/Notepad .png");
+    image-rendering: optimizeSpeed;
+    background-size: cover;
+    background-size: contain;
+    text-align: center;
+    width: 295px;
+    height: 400px;
+    padding: 10px;
+
+}
+
+.draggable_div_container {
+    z-index: 11;
+    margin-top: -25px;
+    width: 297px;
+    height: 367px;
+}
+
+.draggable_div_header {
+    padding: 30px;
+    cursor: move;
+    z-index: 10;
+    color: black;
+    font-weight: bold;
+}
+
 footer{
     text-align: center;
 }
