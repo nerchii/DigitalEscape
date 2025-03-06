@@ -34,6 +34,9 @@ p {
     font-size: 18px;
 }
 
+.dashed{
+    border: 2px dashed black;
+}
 .container {
     position: relative;
     width: 940px;
