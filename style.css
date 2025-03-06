@@ -1,5 +1,7 @@
 body {
-    background-image: url(https://i.postimg.cc/8PJRGKDG/whitegrain.gif);
+    background-image: url(https://i.pinimg.com/736x/0a/33/43/0a33431e963f18cc2d4469fee23cd527.jpg);
+    background-attachment: fixed;
+    background-size: contain;
     font-family: "Gill Sans", sans-serif;
     display: flex;
     justify-content: center;
