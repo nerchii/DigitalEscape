@@ -9,7 +9,6 @@ body {
     overflow: hidden;
 }
 
-
 .container{
     width: 1900px;
     height: 1900px;
@@ -23,7 +22,6 @@ body {
     display: flex;
     image-rendering: optimizeSpeed;
     pointer-events: none;
-
 }
 
 .game_container{
@@ -34,7 +32,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+.gif_container {
+    overflow: hidden;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 1460px;
+    width: 300px;
+    height: 600px;
+    z-index: -1;
 
+}
 .button1 {
     background-image: url("https://nerrchii.neocities.org/resources/b1.png");
     background-size: cover;
