@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Nanum+Pen+Script&display=swap');
 
 body {
     background-image: url(https://i.pinimg.com/736x/f6/1f/19/f61f19673a4f47ed63c205fc5704c383.jpg);
@@ -161,8 +162,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
     user-select: none;
+    font-family: 'Caveat', cursive;
 
 }
 .button2 {
@@ -179,8 +181,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
     user-select: none;
+    font-family: 'Caveat', cursive;;
 
 }
 .button1:active {

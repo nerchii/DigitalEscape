@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Nanum+Pen+Script&display=swap');
+
 body {
     background-image: url(https://i.pinimg.com/736x/0a/33/43/0a33431e963f18cc2d4469fee23cd527.jpg);
     background-attachment: fixed;
     background-size: contain;
     font-family: "Gill Sans", sans-serif;
+    font-weight: 400;
+    font-size: large;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     overflow: hidden;
-
 }
 .draggable_div {
     position: absolute;
@@ -135,8 +138,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
     user-select: none;
+    font-family: 'Caveat', cursive;
+
 }
 .button2 {
     background-image: url("https://nerrchii.neocities.org/resources/b2.png");
@@ -152,8 +157,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
     user-select: none;
+    font-family: 'Caveat', cursive;
 }
 .button1:active {
     transform: scale(0.95);
