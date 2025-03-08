@@ -2,7 +2,8 @@ body {
     background-image: url(https://i.pinimg.com/736x/0a/33/43/0a33431e963f18cc2d4469fee23cd527.jpg);
     background-attachment: fixed;
     background-size: contain;
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'LobsterFugu', serif;
+    font-size: x-large;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +21,7 @@ footer{
     text-align: center;
 }
 h1 {
+    font-family: 'AppleNewIslandRegular', sans-serif;
     text-align: center;
     align-content: end;
 }
@@ -119,4 +121,17 @@ p {
 }
 .button2:active {
     transform: scale(0.95);
+}
+
+@font-face {
+    font-family: 'AppleNewIslandRegular';
+    src: url('resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CreamySugar';
+    src: url('resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LobsterFugu';
+    src: url('resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
 }
