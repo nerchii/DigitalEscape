@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Nanum+Pen+Script&display=swap');
+
 body {
     background-color: white;
     font-family: "Gill Sans", sans-serif;
@@ -62,8 +64,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
     user-select: none;
+    font-family: 'Caveat', cursive;
 }
 .button2 {
     background-image: url("https://nerrchii.neocities.org/resources/b2.png");
@@ -79,8 +82,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
     user-select: none;
+    font-family: 'Caveat', cursive;
 }
 .button1:active {
     transform: scale(0.95);
