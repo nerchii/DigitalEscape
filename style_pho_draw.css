@@ -157,8 +157,8 @@ p {
     }
 }
 .button1 {
-    background-image: url("https://nerrchii.neocities.org/resources/b1.png");
-    background-size: cover;
+    background-image: url("resources/b1_v2.png");
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -176,8 +176,8 @@ p {
 
 }
 .button2 {
-    background-image: url("https://nerrchii.neocities.org/resources/b2.png");
-    background-size: cover;
+    background-image: url("resources/b2_v2.png");
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -192,7 +192,6 @@ p {
     font-size: 20px;
     user-select: none;
     font-family: 'AppleNewIslandRegular', sans-serif;
-
 }
 .button1:active {
     transform: scale(0.95);
