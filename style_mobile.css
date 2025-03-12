@@ -51,7 +51,7 @@ p {
     width: 620px;
     padding: -20px;
     margin-left: -20px;
-    background-image: url("https://i.postimg.cc/rFMYjNNn/paper.png");
+    background-image: url("resources/paper_v2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -63,7 +63,6 @@ p {
 }
 
 .ncont {
-    background-image : url("https://i.postimg.cc/Y9f1b9g5/note1.jpg");
     position: absolute;
     margin-top: 350px;
     margin-left: 190px;

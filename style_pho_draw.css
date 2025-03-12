@@ -17,7 +17,7 @@ body {
 .draggable_div {
     position: absolute;
     z-index: 9;
-    background-image: url("resources/Notepad .png");
+    background-image: url("resources/Notepad_v2.png");
     image-rendering: optimizeSpeed;
     background-size: cover;
     background-size: contain;
@@ -70,7 +70,7 @@ p {
     position: relative;
     width: 940px;
     padding: 20px;
-    background-image: url("https://i.postimg.cc/rFMYjNNn/paper.png");
+    background-image: url("resources/paper_v2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
