@@ -15,7 +15,7 @@ body{
 .draggable_div {
     position: absolute;
     z-index: 9;
-    background-image: url("resources/Notepad_v2.png");
+    background-image: url("https://i.postimg.cc/Y0pmVWhv/Notepad-v2.png");
     image-rendering: optimizeSpeed;
     background-size: cover;
     background-size: contain;
@@ -76,7 +76,7 @@ p {
     position: absolute;
     width: 940px;
     padding: 20px;
-    background-image: url("resources/paper_v2.png");
+    background-image: url("https://i.postimg.cc/4d1YzxBs/paper-v2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -125,7 +125,7 @@ p {
 }
 
 .button1 {
-    background-image: url("resources/b1_v2.png");
+    background-image: url("https://i.postimg.cc/t4fWTJmc/b1-v2.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -144,7 +144,7 @@ p {
 
 }
 .button2 {
-    background-image: url("resources/b2_v2.png");
+    background-image: url("https://i.postimg.cc/hGdx7nkt/b2-v2.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;

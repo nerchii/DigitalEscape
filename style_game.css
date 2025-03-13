@@ -15,7 +15,7 @@ body {
     height: 1900px;
     position: absolute ;
     z-index: 0;
-    background-image: url("resources/colored_game_bcgr.png");
+    background-image: url("https://i.postimg.cc/NM8Hp4fh/colored-game-bcgr.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -44,7 +44,7 @@ body {
 }
 
 .button1 {
-    background-image: url("resources/b1_v2.png");
+    background-image: url("https://i.postimg.cc/t4fWTJmc/b1-v2.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -64,7 +64,7 @@ body {
 
 }
 .button2 {
-    background-image: url("resources/b2_v2.png");
+    background-image: url("https://i.postimg.cc/hGdx7nkt/b2-v2.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
