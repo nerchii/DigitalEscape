@@ -90,7 +90,9 @@ p {
     height: auto;
     margin-left: -60px;
     margin-top: 220px;
+    transform: rotate(-3deg);
     image-rendering: optimizeSpeed;
+
 }
 .ncont {
     position: absolute;
