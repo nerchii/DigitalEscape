@@ -144,6 +144,9 @@ p {
     object-fit: contain;
     padding: 7px;
 }
+.column img:hover {
+    transform: scale(0.97);
+}
 
 @media screen and (max-width: 800px) {
     .column {
