@@ -65,10 +65,10 @@ p {
     pointer-events: none;
     position: absolute ;
     z-index: 15;
-    width: 460px;
+    width: 200px;
     height: auto;
-    margin-left: -120px;
-    margin-top: 220px;
+    margin-left: -350px;
+    margin-top: 500px;
     transform: rotate(-4deg);
     image-rendering: optimizeSpeed;
 }

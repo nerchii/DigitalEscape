@@ -83,16 +83,17 @@ p {
 }
 
 .bunny {
-    pointer-events: none;
     position: absolute ;
     z-index: 15;
-    width: 900px;
+    width: 420px;
     height: auto;
-    margin-left: -60px;
-    margin-top: 220px;
+    margin-left: -420px;
+    margin-top: 495px;
     transform: rotate(-3deg);
     image-rendering: optimizeSpeed;
-
+}
+.bunny:hover{
+    transform: scale(1.01) rotate(-3deg);
 }
 .ncont {
     position: absolute;
