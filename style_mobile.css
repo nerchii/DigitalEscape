@@ -92,47 +92,6 @@ p {
 
 }
 
-.button1 {
-    background-image: url("https://nerrchii.neocities.org/resources/b1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    width: 120px;
-    height: 120px;
-    border: 0px;
-    background-color: transparent;
-    pointer-events: fill;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    user-select: none;
-}
-.button2 {
-    background-image: url("https://nerrchii.neocities.org/resources/b2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    width: 120px;
-    height: 120px;
-    border: 0px;
-    background-color: transparent;
-    pointer-events: fill;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    user-select: none;
-}
-.button1:active {
-    transform: scale(0.95);
-}
-.button2:active {
-    transform: scale(0.95);
-}
-
 @font-face {
     font-family: 'AppleNewIslandRegular';
     src: url('resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
