@@ -1,0 +1,75 @@
+
+body {
+    background-color: #fff2d6;
+    font-family: "Gill Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+.container_behind{
+    width: 750px;
+    height: 320px;
+    position: absolute;
+    margin-left: 630px;
+    margin-top: 720px;
+    z-index: -1;
+    overflow: scroll;
+}
+.container{
+    width: 2000px;
+    height: 2000px;
+    position: absolute ;
+    background-image: url(resources/bckg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    display: flex;
+    image-rendering: optimizeSpeed;
+    pointer-events: none;
+}
+.buttons {
+    margin-top: 378px;
+    margin-left: 13px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 5;
+}
+.pump_button {
+    background-image: url(resources/pump_button.png);
+    background-size: 94% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 195px;
+    height: 195px;
+    border: 0px;
+    background-color: transparent;
+    pointer-events: fill;
+    display: flex;
+    user-select: none;
+    align-items: center;
+    clip-path: circle(50%);
+
+}
+.pump_button:active{
+    transform: scale(0.98);
+}
+
+@font-face {
+    font-family: 'AppleNewIslandRegular';
+    src: url('resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CreamySugar';
+    src: url('resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LobsterFugu';
+    src: url('resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+}
