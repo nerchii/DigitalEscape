@@ -163,7 +163,10 @@ p {
     user-select: none;
     font-family: 'AppleNewIslandRegular', sans-serif;
 }
-.button1:active, .button2:active{
+.button1:active {
+    transform: scale(0.95);
+}
+.button2:active {
     transform: scale(0.95);
 }
 

@@ -48,6 +48,7 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
+    transform: rotate(-3deg);
     cursor: pointer;
     width: 180px;
     height: 180px;
@@ -67,6 +68,7 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
+    transform: rotate(2deg);
     cursor: pointer;
     width: 180px;
     height: 180px;
@@ -80,9 +82,13 @@ body {
     user-select: none;
     font-family: 'AppleNewIslandRegular', sans-serif;
 }
-.button1:active, .button2:active{
+.button1:active {
     transform: scale(0.95);
 }
+.button2:active {
+    transform: scale(0.95);
+}
+
 .buttons {
     overflow: hidden;
     position: absolute;
