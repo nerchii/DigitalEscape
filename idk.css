@@ -15,8 +15,8 @@ body {
     position: absolute;
     margin-left: 630px;
     margin-top: 720px;
-    z-index: -1;
-    overflow: scroll;
+    z-index: 5;
+    overflow: hidden;
 }
 .container{
     width: 2000px;
@@ -29,7 +29,7 @@ body {
     margin: 0 auto;
     display: flex;
     image-rendering: optimizeSpeed;
-    pointer-events: none;
+    pointer-events: auto;
 }
 .buttons {
     margin-top: 378px;
@@ -48,19 +48,41 @@ body {
     cursor: pointer;
     width: 195px;
     height: 195px;
-    border: 0px;
+    border: 0;
     background-color: transparent;
     pointer-events: fill;
     display: flex;
     user-select: none;
     align-items: center;
+    justify-content: center;
     clip-path: circle(50%);
+    font-family: 'AppleNewIslandRegular', sans-serif;
+    font-size: 50px;
 
 }
+
 .pump_button:active{
     transform: scale(0.97);
 }
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
+#paintCanvas {
+    background-color: white;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery img {
+    border: 2px solid black;
+    margin: 5px;
+    width: 200px;
+}
 @font-face {
     font-family: 'AppleNewIslandRegular';
     src: url('resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');

@@ -14,15 +14,75 @@
 
 </head>
 <body>
+
+
 <div class="buttons" >
-    <div class="pump_button" style="margin-right: 20px" onclick="window.location.href='"' ></div>
-<div class="pump_button" style="margin-left: 50px" onclick="window.location.href='"' ></div>
-<div class="pump_button" style="margin-right: 20px" onclick="window.location.href='"' ></div>
+    <div class="pump_button" id="clearBtn" style="margin-right: 20px">Clear</div>
+    <div class="pump_button" id="saveBtn" style="margin-left: 50px">Save</div>
+    <div class="pump_button" style="margin-right: 20px"  ></div>
 </div>
+
 <div class="container">
     <div class="container_behind">
+        <div class="controls">
+            <input type="color" id="colorPicker" value="#000000">
+            <input type="range" id="brushSize" min="1" max="10" value="5">
+        </div>
+
+        <canvas id="paintCanvas"></canvas>
     </div>
 </div>
+<div class="gallery" id="gallery" style="margin-top: 4000px; background-color: black; z-index: 10 "></div>
+
+<script>
+    const canvas = document.getElementById('paintCanvas');
+    const ctx = canvas.getContext('2d');
+    const colorPicker = document.getElementById('colorPicker');
+    const brushSize = document.getElementById('brushSize');
+    const clearBtn = document.getElementById('clearBtn');
+    const saveBtn = document.getElementById('saveBtn');
+    const gallery = document.getElementById('gallery');
+
+    canvas.width = 750;
+    canvas.height = 300;
+
+    let painting = false;
+
+    function startPosition(e) {
+        painting = true;
+        draw(e);
+    }
+    function endPosition() {
+        painting = false;
+        ctx.beginPath();
+    }
+    function draw(e) {
+        if (!painting) return;
+        ctx.lineWidth = brushSize.value;
+        ctx.lineCap = "round";
+        ctx.strokeStyle = colorPicker.value;
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(e.offsetX, e.offsetY);
+    }
+
+    canvas.addEventListener('mousedown', startPosition);
+    canvas.addEventListener('mouseup', endPosition);
+    canvas.addEventListener('mousemove', draw);
+
+    clearBtn.addEventListener('click', () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+
+    saveBtn.addEventListener('click', () => {
+        const imgData = canvas.toDataURL("image/png");
+        const img = document.createElement('img');
+        img.src = imgData;
+        gallery.appendChild(img);
+    });
+
+</script>
 
 </body>
 </html>
