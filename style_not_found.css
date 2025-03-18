@@ -1,7 +1,8 @@
 
 body{
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.imgur.com%2FbZnePbG.gif&f=1&nofb=1&ipt=e30cdb395fe19420267049a62aa070ccdc39429466722e6aea4ded7bae74e880&ipo=images);
+    background-image: url(https://i.postimg.cc/g2c10D9K/1-2-min.png);
     background-color:  #d8d5f0;
+    background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
     font-family: 'LobsterFugu', serif;
@@ -14,7 +15,6 @@ body{
     overflow: hidden;
 }
 .draggable_div {
-    position: absolute;
     z-index: 1;
     text-align: center;
     width: 354px;
@@ -53,7 +53,6 @@ h1 {
     text-align: center;
     align-content: end;
     user-select: none;
-
 }
 
 .navcont {
@@ -70,7 +69,6 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 .button1 {
     background-image: url("https://i.postimg.cc/t4fWTJmc/b1-v2.png");
@@ -89,7 +87,6 @@ h1 {
     font-size: 20px;
     user-select: none;
     font-family: 'AppleNewIslandRegular', sans-serif;
-
 }
 .button2 {
     background-image: url("https://i.postimg.cc/hGdx7nkt/b2-v2.png");
@@ -112,9 +109,6 @@ h1 {
 .button1:active, .button2:active{
     transform: scale(0.95);
 }
-
-
-
 
 @font-face {
     font-family: 'AppleNewIslandRegular';

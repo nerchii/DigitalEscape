@@ -20,9 +20,8 @@ body{
     background-image: url("https://i.postimg.cc/Y0pmVWhv/Notepad-v2.png");
     image-rendering: optimizeSpeed;
     background-size: cover;
-    background-size: contain;
     text-align: center;
-    width: 295px;
+    width: 294px;
     height: 400px;
     padding: 10px;
 
@@ -136,7 +135,7 @@ p {
     cursor: pointer;
     width: 180px;
     height: 180px;
-    border: 0px;
+    border: 0;
     background-color: transparent;
     pointer-events: fill;
     display: flex;
@@ -155,7 +154,7 @@ p {
     cursor: pointer;
     width: 180px;
     height: 180px;
-    border: 0px;
+    border: 0;
     background-color: transparent;
     pointer-events: fill;
     display: flex;
