@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .container_behind{
     width: 750px;
@@ -58,7 +58,7 @@ body {
 
 }
 .pump_button:active{
-    transform: scale(0.98);
+    transform: scale(0.97);
 }
 
 @font-face {
