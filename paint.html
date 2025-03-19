@@ -14,7 +14,7 @@
 
 </head>
 <body>
-
+<! -- bottuns -->
 <div class="buttons" >
     <div class="pump_button" id="clearBtn" style="margin-right: 20px">CLEAR</div>
     <div class="pump_button" id="saveBtn" style="margin-left: 50px">SAVE</div>
@@ -23,17 +23,31 @@
         PICK A<br>COLOR
     </div>
 </div>
+<! -- ... -->
+
+<! -- main container -->
 <div class="container"></div>
 <div class="container_behind">
+
+    <! -- paint contolls -->
     <div class="controls">
         <span style="font-family: 'AppleNewIslandRegular', sans-serif; font-size: 25px; font-weight: bolder"> BRUSH SIZE: </span>
         <input type="range" id="brushSize" min="1" max="10" value="5">
     </div>
+    <! -- ... -->
+
+    <! -- canvas -->
     <canvas id="paintCanvas"></canvas>
+    <! -- ... -->
+
+
+<! -- gallery -->
 </div>
 <div class="gallery" id="gallery"> </div>
 <div class="container_behind_bckg">
 </div>
+<! -- ... -->
+
 
 <script>
     const canvas = document.getElementById('paintCanvas');

@@ -21,6 +21,7 @@
 </div>
 <img class="bunny" src="resources/Bunny_v3.png" alt="bunni" style="margin-bottom: 133px">
 
+<!-- Draggable div -->
 <div class="draggable_div" style="top: 60px; left: 210px;">
     <div class="draggable_div_header" ></div>
     <div class="draggable_div_container">
@@ -43,7 +44,9 @@
         <img height="35px" alt="comand" src="https://i.postimg.cc/CL9nGYNp/0068-mainframe.gif"/>
     </div>
 </div>
+<!-- ... -->
 
+<!-- Draggable div -->
 <div class="draggable_div" style=
         "top: 450px;
         left: 50px;
@@ -66,9 +69,10 @@
         </div>
     </div>
     </div>
-
 </div>
+<!-- ... -->
 
+<!-- Draggable div -->
 <div class="draggable_div" style=
         "bottom: 30px;
         right: 50px;
@@ -84,8 +88,9 @@
         "></iframe>
     </div>
 </div>
+<!-- ... -->
 
-
+<!-- Main container -->
 <div class="container">
     <div class="ncont">
         <div class="con">
@@ -172,7 +177,7 @@
             </footer>
         </div>
     </div>
-
+    <!-- Navigation bar -->
     <div class="navcont">
         <div class="button1" onclick="window.location.href='drawings.html'" >
             <h2>ALBUM</h2>
@@ -184,10 +189,9 @@
             <h2>GAME</h2>
         </div>
     </div>
-
-
-
+    <!-- ... -->
 </div>
+<!-- ... -->
 
 <script>
     function dragElement(elmnt) {
@@ -232,12 +236,13 @@
     document.querySelectorAll(".draggable_div").forEach(function (element) {
         dragElement(element);
     });
-        function copyCode() {
-        const code = document.getElementById("code_block").innerText;
-        navigator.clipboard.writeText(code).then(() => {
-        alert("Code copied!");
+
+    function copyCode() {
+    const code = document.getElementById("code_block").innerText;
+    navigator.clipboard.writeText(code).then(() => {
+    alert("Code copied!");
     });
-    }
+}
 
 </script>
 
