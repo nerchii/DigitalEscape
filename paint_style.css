@@ -8,16 +8,26 @@ body {
     height: 100vh;
     margin: 0;
     overflow-x: hidden;
+
 }
 .container_behind{
-    width: 750px;
-    height: 320px;
+    background-color: #e3e3e3;
+    width: 710px;
+    height: 290px;
     position: absolute;
-    margin-left: 630px;
-    margin-top: 720px;
-    z-index: 5;
+    margin-top: -240px;
+    margin-left: 5px;
     overflow: hidden;
 }
+.container_behind_bckg{
+    background-color: #e3e3e3;
+    z-index: -100;
+    width: 790px;
+    height: 360px;
+    position: absolute;
+    margin-top: -240px;
+}
+
 .container{
     width: 2000px;
     height: 2000px;
@@ -29,7 +39,7 @@ body {
     margin: 0 auto;
     display: flex;
     image-rendering: optimizeSpeed;
-    pointer-events: auto;
+    pointer-events: none;
 }
 .buttons {
     margin-top: 378px;
@@ -42,6 +52,8 @@ body {
 }
 .pump_button {
     background-image: url(resources/pump_button.png);
+    color: #2f292b;
+    font-weight: bolder;
     background-size: 94% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -72,16 +84,23 @@ body {
 }
 
 #paintCanvas {
-    background-color: white;
-    border: 2px solid black;
+    background-color: #e3e3e3;
     display: block;
     margin: 0 auto;
 }
+.gallery {
+    width: 1500px;
+    height:500px;
+    margin-top: 1400px;
+    margin-left:100px;
+    position: absolute;
+    z-index: 1;
+}
 
 .gallery img {
-    border: 2px solid black;
+    border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAABnElEQVR4Xu3dMY7CMBgFYXIcRMH9j0GBOA602JZ4/pWhSDzbrWIe8DEgqt3tUvy5X2/v4k1Offzxem7fT7D5ZeaZC9oqCTpTTeGMoAWsmaNl0PQW7wdnHsSRzySP+BmaBgRt8xC0+HZJgQn6b9D+Fejf0ul68fEd7ni50ASWrh9OqPiABS2CpeOCJqHi9QiaDqT782tT97VJ0JRMez15belAujsLtdDUyM/rKcCh0NWKq+oKWhUL5wUVFBaA5yxUUFgAnrNQQWEBeM5CBYUF4DkLFRQWgOcsVFBYAJ6zUEFhAXjOQgWFBeA5CxUUFoDnLFRQWACes1BBYQF4zkIFhQXgOQsVFBaA5yxUUFgAnrNQQWEBeM5CBYUF4DkLFRQWgOcsVFBYAJ6zUEFhAXjOQgWFBeA5CxUUFoDnLFRQWACes1BBYQF4zkIFhQXgOQsVFBaA5yxUUFgAnrNQQWEBeM5CBYUF4DkLFRQWgOfKhcL3v9zc7j93uZxYeMKCwkUISoP2e+lDF77/080N/2lB0H2vsaD7/IZbCwqDfgDgRbkEz0TJ5gAAAABJRU5ErkJggg==") 28 /  28px / 0 round;
     margin: 5px;
-    width: 200px;
+    width: 470px;
 }
 @font-face {
     font-family: 'AppleNewIslandRegular';
