@@ -1,0 +1,73 @@
+body{
+    background-color: #d8d5f0;
+    font-family: 'LobsterFugu', serif;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-position: center;
+}
+.main_div {
+    z-index: 1;
+    width: 740px;
+    height: 1000px;
+    padding: 10px;
+    position: relative;
+    user-select: none;
+}
+.main_div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://i.postimg.cc/Y0pmVWhv/Notepad-v2.png");
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.sitemap {
+    font-size: 40px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: -25px;
+    width: 870px;
+    height: 700px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+@font-face {
+    font-family: 'AppleNewIslandRegular';
+    src: url('resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CreamySugar';
+    src: url('resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LobsterFugu';
+    src: url('resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'AppleNewIslandRegular', sans-serif;
+    text-align: center;
+    align-content: end;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 0px;
+
+}
+.dashed{
+    border: 2px dashed black;
+}
