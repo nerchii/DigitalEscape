@@ -60,6 +60,8 @@ body {
     font-size: 20px;
     user-select: none;
     font-family: 'AppleNewIslandRegular', sans-serif;
+    transition: transform 0.2s ease;
+
 
 }
 .button2 {
@@ -79,6 +81,14 @@ body {
     font-size: 20px;
     user-select: none;
     font-family: 'AppleNewIslandRegular', sans-serif;
+    transition: transform 0.2s ease;
+
+}
+.button1:hover{
+    transform: rotate(2deg);
+}
+.button2:hover {
+    transform: rotate(-2deg);
 }
 .button1:active, .button2:active{
     transform: scale(0.95);

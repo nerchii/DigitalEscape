@@ -70,11 +70,10 @@ body {
     clip-path: circle(50%);
     font-family: 'AppleNewIslandRegular', sans-serif;
     font-size: 50px;
-
 }
 
 .pump_button:active{
-    transform: scale(0.97);
+    transform: scale(0.98);
 }
 .controls {
     display: flex;
