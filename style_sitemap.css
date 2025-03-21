@@ -1,5 +1,5 @@
 body{
-    background-color: #d8d5f0;
+    background-image: url(https://olliveen.neocities.org/img/static.gif);
     font-family: 'LobsterFugu', serif;
     font-size: x-large;
     display: flex;
@@ -54,11 +54,9 @@ body{
     src: url('resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
 }
 
-h1 {
-    font-family: 'AppleNewIslandRegular', sans-serif;
+h2 {
     text-align: center;
     align-content: end;
-    font-weight: bolder;
 }
 
 ul {
