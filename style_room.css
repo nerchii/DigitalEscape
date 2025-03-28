@@ -39,29 +39,53 @@ body{
     z-index: 2;
 }
 .me:hover {
-    transform: scale(1.03);
+     transform: scale(1.03);
+
 }
-.me::after {
-    content: "ABOUT ME";
+.clickable {
+     position: absolute;
+     z-index: 3;
+     display: flex;
+     background-color: transparent;
+     pointer-events: auto;
+}
+
+.me:hover::after, .clickable:hover::after {
+    opacity: 1;
+}
+
+.clickable:after ,.me::after {
+    content: "";
     position: absolute;
     left: 90%;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 6px 10px;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 2px;
+    font-size: 20px;
     white-space: nowrap;
     opacity: 0;
     transition: opacity 0.1s ease-in-out;
     pointer-events: none;
 }
 
-.me:hover::after {
-    opacity: 1;
+#vinyls::after{
+    content: "VINYL";
 }
-
+#bus::after{
+    content: "SIGNS";
+}
+#pc::after{
+    content: "PC";
+}
+#toys::after{
+    content: "TOYS";
+}
+#me::after{
+    content: "ABOUT ME";
+}
 
 @font-face {
     font-family: 'AppleNewIslandRegular';
