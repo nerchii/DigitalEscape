@@ -1,10 +1,4 @@
 
-♡♡ WELCOME T♡ MY BLOG ♡♡
-========================
-
 ## very cool site, trust me :)
 
-
-Still working on this site :3
-
-made 27.2.2025 :)
+[![1.gif](https://i.postimg.cc/hjQxp0WX/1.gif)](https://postimg.cc/wyH7BLBz)
