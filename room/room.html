@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my room</title>
     <link rel="stylesheet" href="style_room.css">
-    <link rel="icon" type="image/x-icon" href="resources/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png">
     <script>
         if (screen.width <= 480) {
             window.location.href = 'mobile_index.html';
@@ -14,13 +14,24 @@
 </head>
 <body>
 
+
+<! -- room -->
 <div class="room">
+    <! -- Go back button -->
+    <div class="back" style="transform: scale(0.60); margin-left: 850px; margin-bottom: 800px;" onclick="history.back()" >
+        <h2>GO BACK</h2>
+    </div>
+    <! -- ... -->
+    <! -- buttons -->
     <div id = "me" class="me" onclick="window.location.href=''" ></div>
-    <div id ="vinyls" class="clickable" onclick="window.location.href=''"  style="width: 170px; height: 100px; margin-left: -100px; margin-top: -500px;" ></div>
+    <div id ="vinyls" class="clickable" onclick="window.location.href='music.html'"  style="width: 170px; height: 100px; margin-left: -100px; margin-top: -500px;" ></div>
     <div id ="bus" class="clickable" onclick="window.location.href=''"  style="width: 80px; height: 80px; margin-left:150px; margin-top: -550px;  "></div>
     <div id ="pc" class="clickable" onclick="window.location.href=''"  style="width: 70px; height: 70px;  margin-top: -280px;   "></div>
-    <div id ="toys" class="clickable" onclick="window.location.href=''"  style="width: 90px; height: 100px;  margin-left:250px; margin-top: 550px;   "></div>
+    <div id ="toys" class="clickable" onclick="window.location.href='toys.html'"  style="width: 90px; height: 100px;  margin-left:250px; margin-top: 550px;   "></div>
+    <! -- ... -->
 </div>
+<! -- ... -->
+
 </body>
 </html>
 

@@ -9,8 +9,31 @@ body{
     width: 100vw;
     height: 100vh;
 }
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+    scrollbar-width: none;
+    gap: 20px;
+}
+.container .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
 .room {
-    background-image: url('resources/Room.png');
+    background-image: url('../resources/Room.png');
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
@@ -25,7 +48,8 @@ body{
     z-index: 1;
 }
 .me {
-    background-image: url('resources/me.png');
+    background-image: url('../resources/me.png');
+    cursor: pointer;
     position: absolute;
     background-color: transparent;
     pointer-events: fill;
@@ -48,6 +72,7 @@ body{
      display: flex;
      background-color: transparent;
      pointer-events: auto;
+    cursor: pointer;
 }
 
 .me:hover::after, .clickable:hover::after {
@@ -60,7 +85,7 @@ body{
     left: 90%;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 6px 10px;
     border-radius: 2px;
@@ -87,19 +112,46 @@ body{
     content: "ABOUT ME";
 }
 
+.back {
+    background-image: url('../resources/back.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    border: 0;
+    background-color: transparent;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    user-select: none;
+    font-family: 'AppleNewIslandRegular', sans-serif;
+    z-index: 10;
+    position: absolute;
+}
+.back:hover{
+    transform: scale(1.01);
+}
+.back:active{
+    transform: scale(0.95);
+}
+
 @font-face {
     font-family: 'AppleNewIslandRegular';
-    src: url('resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+    src: url('../resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
 }
 @font-face {
     font-family: 'CreamySugar';
-    src: url('resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+    src: url('../resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
 }
 @font-face {
     font-family: 'LobsterFugu';
-    src: url('resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+    src: url('../resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Retroma Vibes';
-    src: url('fonts/Retroma Vibes.ttf') format('truetype');
+    src: url('../fonts/Retroma Vibes.ttf') format('truetype');
 }

@@ -64,8 +64,37 @@ ul {
 }
 li {
     padding: 0px;
-
 }
 .dashed{
     border: 2px dashed black;
+}
+
+.back {
+    background-image: url(resources/back.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    border: 0;
+    background-color: transparent;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    user-select: none;
+    font-family: 'AppleNewIslandRegular', sans-serif;
+    transition: transform 0.2s ease;
+    z-index: 9999;
+    position: absolute;
+    bottom: 70px;
+    right: -200px;
+}
+.back:hover{
+    transform: scale(1.01);
+}
+.back:active{
+    transform: scale(0.95);
 }
