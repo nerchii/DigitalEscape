@@ -1,0 +1,81 @@
+body{
+    background-image: url(https://i.postimg.cc/R07zbpK8/static.gif);
+    background-color: black;
+    font-family: 'LobsterFugu', serif;
+    font-size: x-large;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.room {
+    background-image: url('resources/Room.png');
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.me {
+    background-image: url('resources/me.png');
+    position: absolute;
+    background-color: transparent;
+    pointer-events: fill;
+    top: 49%;
+    left: 43%;
+    width: 7vw;
+    height: 24vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+.me:hover {
+    transform: scale(1.03);
+}
+.me::after {
+    content: "ABOUT ME";
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    pointer-events: none;
+}
+
+.me:hover::after {
+    opacity: 1;
+}
+
+
+@font-face {
+    font-family: 'AppleNewIslandRegular';
+    src: url('resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CreamySugar';
+    src: url('resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LobsterFugu';
+    src: url('resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Retroma Vibes';
+    src: url('fonts/Retroma Vibes.ttf') format('truetype');
+}

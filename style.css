@@ -215,3 +215,7 @@ p {
     font-family: 'LobsterFugu';
     src: url('resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Retroma Vibes';
+    src: url('fonts/Retroma Vibes.ttf') format('truetype');
+}
