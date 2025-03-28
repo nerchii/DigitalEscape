@@ -155,3 +155,7 @@ body{
     font-family: 'Retroma Vibes';
     src: url('../fonts/Retroma Vibes.ttf') format('truetype');
 }
+
+.dashed{
+    border: 2px dashed black;
+}
