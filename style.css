@@ -217,5 +217,5 @@ p {
 }
 @font-face {
     font-family: 'Retroma Vibes';
-    src: url('fonts/Retroma Vibes.ttf') format('truetype');
+    src: url('resources/fonts/Retroma Vibes.ttf') format('truetype');
 }
