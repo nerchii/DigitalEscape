@@ -14,10 +14,11 @@
 </head>
 <body class="crt">
 
-<audio controls>
-  <source src="resources/music/Joji - YEAH RIGHT.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
+<audio id="audioPlayer" controls>
+  <source src="" type="audio/mpeg">
 </audio>
+<button id="prev"><-</button>
+<button id="next">-></button>
 
 <! -- Go back button -->
 <div class="back" style="transform: scale(0.80)" onclick="history.back()" >
@@ -25,13 +26,13 @@
 </div>
 <! -- ... -->
 
-
 <! -- vinyl collection -->
 
 <div class="container">
   <div class="container .box">
     <h1 style="font-size: 180px">mUsiC/
       </br>ViNYls</h1>
+
     <div class="box">
       <img alt="Demon Days - Gorillaz" class="img" style="width: 450px" src="https://shorturl.at/lEIfx">
     </div>
@@ -60,6 +61,44 @@
 </div>
 
 <! -- ... -->
+
+<script>
+  // JavaScript to control the audio playlist
+  let currentSongIndex = 0;
+  const playlist = [
+    "https://github.com/nerchii/DigitalEscape/raw/refs/heads/main/resources/music/Twenty%20One%20Pilots%20-%20Midwest%20Indigo%20.mp3",
+    "https://github.com/nerchii/DigitalEscape/raw/refs/heads/main/resources/music/Twenty%20One%20Pilots%20-%20Oldies%20Station.mp3",
+    "https://raw.githubusercontent.com/nerchii/DigitalEscape/main/resources/music/Joji%20-%20YEAH%20RIGHT.mp3",
+    "https://github.com/nerchii/DigitalEscape/raw/refs/heads/main/resources/music/Weezer%20-%20Buddy%20Holly.mp3",
+    "https://github.com/nerchii/DigitalEscape/raw/refs/heads/main/resources/music/twenty%20one%20pilots%20-%20I'm%20Not%20Okay.mp3"
+  ];
+
+  // Initialize the audio player
+  const audioElement = document.getElementById("audioPlayer");
+  const nextButton = document.getElementById("next");
+  const prevButton = document.getElementById("prev");
+
+  // Function to play a song
+  function playSong() {
+    audioElement.src = playlist[currentSongIndex];
+    audioElement.play();
+  }
+
+  // Go to the next song
+  nextButton.onclick = () => {
+    currentSongIndex = (currentSongIndex + 1) % playlist.length; // Loop to first song if at the end
+    playSong();
+  };
+
+  // Go to the previous song
+  prevButton.onclick = () => {
+    currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length; // Loop to last song if at the start
+    playSong();
+  };
+
+  // Play the first song when the page loads
+  window.onload = playSong;
+</script>
 
 </body>
 </html>
