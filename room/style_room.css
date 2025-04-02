@@ -16,17 +16,18 @@ h1 {
     text-align: center;
 }
 p {
-    font-family: 'AppleNewIslandRegular', sans-serif;
-    font-size: 20px;
+    font-family: 'LobsterFugu', serif;
+    font-size:35px;
     color: white;
     text-align: center;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
     position: relative;
     width: 80vw;
     height: 90vh;
@@ -35,7 +36,62 @@ p {
     transform: translate(-50%, -50%);
     overflow: scroll;
     scrollbar-width: none;
-    gap: 20px;
+    gap: 10px;
+    min-height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.column {
+    flex: 1 1 45%;
+    max-width: 45%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.column img:hover {
+    transform: scale(0.99);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.box {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box img:hover {
+    transform: scale(0.99);
 }
 
 .container .box {
