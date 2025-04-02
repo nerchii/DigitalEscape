@@ -17,9 +17,9 @@ h1 {
 }
 p {
     font-family: 'LobsterFugu', serif;
-    font-size:35px;
+    font-size:32px;
     color: white;
-    text-align: center;
+    text-align: justify;
 }
 
 .container {
