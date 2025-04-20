@@ -9,6 +9,8 @@ body{
     margin: 0;
     overflow: hidden;
     background-position: center;
+    color: #414141;
+
 }
 .main_div {
     z-index: 1;

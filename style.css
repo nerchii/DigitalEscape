@@ -51,6 +51,7 @@ h1 {
     font-family: 'AppleNewIslandRegular', sans-serif;
     text-align: center;
     align-content: end;
+    color: #536878 ;
 }
 
 ul {
@@ -68,6 +69,10 @@ p {
     text-align: justify;
     padding: 15px;
     font-size: 18px;
+    color: #414141 ;
+}
+span {
+    color:#414141 ;
 }
 
 .dashed{

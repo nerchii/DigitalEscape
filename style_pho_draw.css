@@ -108,7 +108,9 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    scrollbar-width: none
+    scrollbar-width: none;
+    color: #414141;
+
 }
 .navcont {
     overflow: hidden;
