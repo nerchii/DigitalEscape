@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>that is me</title>
+  <link rel="stylesheet" href="style_me.css">
+  <link rel="icon" type="image/x-icon" href="../resources/favicon.png">
+  <script>
+    if (screen.width <= 480) {
+      window.location.href = 'mobile_index.html';
+    }
+  </script>
+</head>
+
+<body class="crt">
+
+<div class="container">
+  <div class="ncont" style="margin-top: 370px; margin-left: 430px; width: 700px; height: 450px; ">
+    <h1>AbOuT mE</h1>
+
+    <span>hello, I am a 21 yo girl who does not like social media rly but still wants a place to post my art and pics and other creations.
+      Was interested in making a site since 2022, used to post my art on Tumblr but back then I didn’t rlly know how to code, so any HTML I managed to "write" was mostly templates I found online.<br>
+      <br>Now I'm attending IT college, so I know something now ayooooo. I'm still a beginner, so if it's not good, too bad.<br>
+
+      <br><img class="myImages" alt="certified cool person" style="max-width: 90%;display: block; margin: 0 auto; " src="../resources/Mclovin.png">
+
+      <br><h2>Some of my hobbies:</h2>
+      <ul>
+        <li>Drawing (especially digital drawing</li>
+        <li>Collecting cool stuff I find… on the street</li>
+        <li>Adding <em>way</em> too many stickers to anything I own</li>
+        <li>Sewing and decorating my clothes/accessories</li>
+      </ul>
+    </span>
+
+    <! -- section -->
+    <section class="photo-group" >
+      <div class="row">
+        <div class="column">
+          <img class="myImages" src="https://i.postimg.cc/VLwXgV93/kirb.gif">
+        </div>
+        <div class="column">
+          <img class="myImages" src="https://i.postimg.cc/tTryFxSQ/compspin_e0.gif">
+        </div>
+      </div>
+    </section>
+    <! -- ... -->
+
+  </div>
+
+  <div class="ncont" style=" width: 230px; height: 280px; margin-top: 490px; margin-left: 180px;">
+
+    <! -- section -->
+    <section class="photo-group" >
+        <div class="column">
+          my pics:
+          <img class="myImages" alt="i do wanna look like Nana if ur wonderig" src=" https://i.postimg.cc/L4Jd4xTy/IMG-1850.jpg">
+          <img class="myImages" alt="my lil shithead" src="https://i.postimg.cc/SRBfmSrp/4329-C832-305-C-4-E44-909-C-BE80-BC6683-BA.jpghttps://i.postimg.cc/SRBfmSrp/4329-C832-305-C-4-E44-909-C-BE80-BC6683-BA.jpg ">
+          <img class="myImages"  src=" https://i.postimg.cc/DZDMbKgx/IMG-9113.jpg">
+          <img class="myImages"  src=" https://i.postimg.cc/BZkrj27J/IMG-2007.jpg">
+          <img class="myImages"  src="https://i.postimg.cc/QdbYJ7m9/IMG-9631.jpg ">
+          <img class="myImages" alt="dope ass pic with my dope ass dork" src="https://i.postimg.cc/44D0fsnd/IMG-4785.jpg ">
+          <img class="myImages"  src="https://i.postimg.cc/G38NnHLV/IMG-7178.jpg ">
+          <img class="myImages"  src="https://i.postimg.cc/SRMt6t1k/IMG-8888.jpg ">
+          <img class="myImages"  src="https://i.postimg.cc/sDWt71b7/IMG-1481.jpg ">
+          <img class="myImages"  src="https://i.postimg.cc/Y9JVrJpY/IMG-2282.jpg">
+          <img class="myImages"  src="https://i.postimg.cc/4NvMGLjH/IMG_1924.jpg">
+
+        </div>
+    <! -- ... -->
+
+  </div>
+
+
+
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<script>
+  function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+
+    if (elmnt.querySelector(".draggable_div_header")) {
+      elmnt.querySelector(".draggable_div_header").onmousedown = dragMouseDown;
+    } else {
+      elmnt.onmousedown = dragMouseDown;
+    }
+
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+
+      document.onmouseup = closeDragElement;
+      document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  }
+
+  document.querySelectorAll(".draggable_div").forEach(function (element) {
+    dragElement(element);
+  });
+  var modal = document.getElementById('myModal');
+  var images = document.getElementsByClassName('myImages');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+
+  for (var i = 0; i < images.length; i++) {
+    var img = images[i];
+    img.onclick = function(evt) {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+  }
+
+  var span = document.getElementsByClassName("close")[0];
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+</script>
+
+</body>
+</html>
