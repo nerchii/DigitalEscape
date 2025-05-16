@@ -48,21 +48,21 @@ footer{
     text-align: center;
 }
 h1 {
-    font-family: 'AppleNewIslandRegular', sans-serif;
+    font-family: 'Retroma Vibes', sans-serif;
     text-align: center;
     align-content: end;
-    color: #536878 ;
+}
+h3 {
+    font-family: 'Retroma Vibes', serif, sans-serif;
 }
 
 ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-
 }
 li {
-    display: inline;
-    padding: 10px;
+    padding: 2px;
 }
 p {
     display: inline-flex;
