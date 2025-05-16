@@ -48,12 +48,14 @@ footer{
     text-align: center;
 }
 h1 {
-    font-family: 'Retroma Vibes', sans-serif;
+    font-family:'AppleNewIslandRegular', sans-serif;
     text-align: center;
     align-content: end;
+    color: #414141 ;
 }
-h3 {
+h4 {
     font-family: 'Retroma Vibes', serif, sans-serif;
+    color: #414141 ;
 }
 
 ul {
