@@ -3,6 +3,7 @@ if (screen.width <= 480) {
 }
 
 
+
 // draggable elements
 function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -59,21 +60,47 @@ function copyCode() {
 }
 
 // screen size notification popup
-function checkWindowSize() {
-    const minWidth = 1750;
-    const minHeight = 900;
+let popupDismissed = false;
 
+function checkWindowSize() {
+    const minWidth = 1800;
+    const minHeight = 900;
     const popup = document.getElementById('popup');
 
-    if (window.innerWidth < minWidth || window.innerHeight < minHeight) {
+    if ((window.innerWidth < minWidth || window.innerHeight < minHeight) && !popupDismissed) {
         popup.style.display = 'flex';
     } else {
         popup.style.display = 'none';
     }
 }
+function includeHTML() {
+    const elements = document.querySelectorAll('[include-html]');
+    elements.forEach(el => {
+        const file = el.getAttribute('include-html');
+        fetch(file)
+            .then(response => response.text())
+            .then(data => {
+                el.innerHTML = data;
+                el.removeAttribute('include-html');
+                if (typeof initPopup === 'function') initPopup();
+            });
+    });
+}
 
-window.addEventListener('load', checkWindowSize);
-window.addEventListener('resize', checkWindowSize);
+document.addEventListener('DOMContentLoaded', includeHTML);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const closeBtn = document.getElementById('closePopup');
+
+    closeBtn.addEventListener('click', () => {
+        document.getElementById('popup').style.display = 'none';
+        popupDismissed = true;
+    });
+
+    checkWindowSize();
+    window.addEventListener('resize', checkWindowSize);
+});
+
 
 
 // modal photo
