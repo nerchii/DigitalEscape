@@ -60,7 +60,7 @@ function copyCode() {
 }
 
 // screen size notification popup
-let popupDismissed = false;
+let popupDismissed = localStorage.getItem('popupDismissed') === 'true';
 
 function checkWindowSize() {
     const minWidth = 1700;
@@ -80,11 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtn.addEventListener('click', () => {
         document.getElementById('popup').style.display = 'none';
         popupDismissed = true;
+        localStorage.setItem('popupDismissed', 'true');
     });
+
 
     checkWindowSize();
     window.addEventListener('resize', checkWindowSize);
 });
+
 
 
 
