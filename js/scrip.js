@@ -63,8 +63,8 @@ function copyCode() {
 let popupDismissed = false;
 
 function checkWindowSize() {
-    const minWidth = 1800;
-    const minHeight = 900;
+    const minWidth = 1700;
+    const minHeight = 800;
     const popup = document.getElementById('popup');
 
     if ((window.innerWidth < minWidth || window.innerHeight < minHeight) && !popupDismissed) {
@@ -73,21 +73,6 @@ function checkWindowSize() {
         popup.style.display = 'none';
     }
 }
-function includeHTML() {
-    const elements = document.querySelectorAll('[include-html]');
-    elements.forEach(el => {
-        const file = el.getAttribute('include-html');
-        fetch(file)
-            .then(response => response.text())
-            .then(data => {
-                el.innerHTML = data;
-                el.removeAttribute('include-html');
-                if (typeof initPopup === 'function') initPopup();
-            });
-    });
-}
-
-document.addEventListener('DOMContentLoaded', includeHTML);
 
 document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.getElementById('closePopup');
