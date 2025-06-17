@@ -122,13 +122,13 @@ h1 {
 
 @font-face {
     font-family: 'AppleNewIslandRegular';
-    src: url('resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+    src: url('../resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
 }
 @font-face {
     font-family: 'CreamySugar';
-    src: url('resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+    src: url('../resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
 }
 @font-face {
     font-family: 'LobsterFugu';
-    src: url('resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+    src: url('../resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
 }

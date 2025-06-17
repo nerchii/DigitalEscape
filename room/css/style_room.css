@@ -1,0 +1,234 @@
+body{
+    background-image: url(https://i.postimg.cc/fLJzXwSs/bcgr.png);
+    background-color: #232b2b;
+    font-family: 'LobsterFugu', serif;
+    font-size: x-large;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+h1 {
+    font-family: "Retroma Vibes" , serif;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: 'LobsterFugu', serif;
+    font-size:32px;
+    color: white;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    width: 80vw;
+    height: 90vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+    scrollbar-width: none;
+    gap: 10px;
+    min-height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.column {
+    flex: 1 1 45%;
+    max-width: 45%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.column img:hover {
+    transform: scale(0.99);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.box {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box img:hover {
+    transform: scale(0.99);
+}
+
+.container .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.container .box .img:hover {
+    transform: scale(0.99);
+    transition: transform 0.2s ease-in-out;
+}
+
+.room {
+    background-image: url('../../resources/Room.png');
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.me {
+    background-image: url('../../resources/me.png');
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+    pointer-events: fill;
+    top: 49%;
+    left: 43%;
+    width: 7vw;
+    height: 24vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+.me:hover {
+     transform: scale(1.03);
+
+}
+.clickable {
+     position: absolute;
+     z-index: 3;
+     display: flex;
+     background-color: transparent;
+     pointer-events: auto;
+    cursor: pointer;
+}
+
+.me:hover::after, .clickable:hover::after {
+    opacity: 1;
+}
+
+.clickable:after ,.me::after {
+    content: "";
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 2px;
+    font-size: 20px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    pointer-events: none;
+}
+
+#vinyls::after{
+    content: "VINYL";
+}
+#bus::after{
+    content: "SIGNS";
+}
+#pc::after{
+    content: "PC";
+}
+
+#me::after{
+    content: "ABOUT ME";
+}
+
+.back {
+    background-image: url('../../resources/back.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    border: 0;
+    background-color: transparent;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    user-select: none;
+    font-family: 'AppleNewIslandRegular', sans-serif;
+    z-index: 10;
+    position: absolute;
+}
+.back:hover{
+    transform: scale(1.01);
+}
+.back:active{
+    transform: scale(0.95);
+}
+
+@font-face {
+    font-family: 'AppleNewIslandRegular';
+    src: url('../../resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CreamySugar';
+    src: url('../../resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LobsterFugu';
+    src: url('../../resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Retroma Vibes';
+    src: url('../../resources/fonts/Retroma Vibes.ttf') format('truetype');
+}
+
+.dashed{
+    border: 2px dashed black;
+}

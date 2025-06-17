@@ -1,5 +1,5 @@
 body {
-    background-image: url(../resources/meeeee.gif);
+    background-image: url(../../resources/meeeee.gif);
     background-attachment: fixed;
     font-family: 'LobsterFugu', serif;
     font-size: x-large;
@@ -45,7 +45,7 @@ span {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../resources/pearphone.png");
+    background-image: url("../../resources/pearphone.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -115,19 +115,19 @@ span {
 
 @font-face {
     font-family: 'AppleNewIslandRegular';
-    src: url('../resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+    src: url('../../resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
 }
 @font-face {
     font-family: 'CreamySugar';
-    src: url('../resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+    src: url('../../resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
 }
 @font-face {
     font-family: 'LobsterFugu';
-    src: url('../resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+    src: url('../../resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Retroma Vibes';
-    src: url('../resources/fonts/Retroma Vibes.ttf') format('truetype');
+    src: url('../../resources/fonts/Retroma Vibes.ttf') format('truetype');
 }
 
 #myImg {
@@ -207,56 +207,4 @@ span {
     .modal-content {
         width: 100%;
     }
-}
-
-/* https://aleclownes.com/2017/02/01/crt-display.html */
-@keyframes flicker {
-    0%, 100% {
-        opacity: 0.8;
-    }
-    50% {
-        opacity: 1;
-    }
-}
-
-@keyframes textShadow {
-    0%, 100% {
-        text-shadow: 0.4px 0 1px rgba(0,30,255,0.3), -0.4px 0 1px rgba(255,0,80,0.2), 0 0 2px;
-    }
-    50% {
-        text-shadow: 0.6px 0 1px rgba(0,30,255,0.3), -0.6px 0 1px rgba(255,0,80,0.2), 0 0 2px;
-    }
-}
-
-.crt::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(18, 16, 16, 0.05);
-    opacity: 0;
-    z-index: 2;
-    pointer-events: none;
-    animation: flicker 0.3s infinite;
-}
-
-.crt::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
-}
-
-.crt {
-    animation: textShadow 2s infinite;
 }

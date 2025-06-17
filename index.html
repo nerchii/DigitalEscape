@@ -3,23 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>♡♡ Digital escape ♡♡</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/screen_width_warning.css">
+
     <link rel="icon" type="image/x-icon" href="resources/favicon.png">
-    <script>
-        if (screen.width <= 480) {
-            window.location.href = 'mobile_index.html';
-        }
-    </script>
+
+    <script src="js/scrip.js" defer></script>
 </head>
 
 <body>
 <header>
 </header>
+
 <div class="button1" style="margin-right: 1150px;margin-top: -600px; " onclick="window.location.href='room/me.html' " >
     <h2>about me</h2>
 </div>
+
 <img class="bunny" src="resources/Bunny_v3.png" alt="bunni" style="margin-bottom: 133px">
+
+<div id="popup">
+    <div id="popupContent">
+        <b>THE PAGE MIGHT NOT DISPLAY CORRECTLY BECAUSE YOU ARE NOT IN FULL SCREEN MODE :(((   <br>(psss...just resize the screen)</b>
+    </div>
+</div>
 
 <!-- Draggable div - gifs -->
 <div class="draggable_div" style="top: 60px; left: 210px;">
@@ -161,60 +170,5 @@
     </div>
     <!-- ... -->
 </div>
-<!-- ... -->
-
-<script>
-    function dragElement(elmnt) {
-        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-
-        if (elmnt.querySelector(".draggable_div_header")) {
-            elmnt.querySelector(".draggable_div_header").onmousedown = dragMouseDown;
-        } else {
-            elmnt.onmousedown = dragMouseDown;
-        }
-
-        function dragMouseDown(e) {
-            e = e || window.event;
-            e.preventDefault();
-
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-
-            document.onmouseup = closeDragElement;
-            document.onmousemove = elementDrag;
-        }
-
-        function elementDrag(e) {
-            e = e || window.event;
-            e.preventDefault();
-
-            pos1 = pos3 - e.clientX;
-            pos2 = pos4 - e.clientY;
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-
-            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-        }
-
-        function closeDragElement() {
-            document.onmouseup = null;
-            document.onmousemove = null;
-        }
-    }
-
-    document.querySelectorAll(".draggable_div").forEach(function (element) {
-        dragElement(element);
-    });
-
-    function copyCode() {
-    const code = document.getElementById("code_block").innerText;
-    navigator.clipboard.writeText(code).then(() => {
-    alert("Code copied!");
-    });
-}
-
-</script>
-
 </body>
 </html>

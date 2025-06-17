@@ -32,7 +32,7 @@ body {
     width: 2000px;
     height: 2000px;
     position: absolute ;
-    background-image: url(resources/bckg.png);
+    background-image: url(../resources/bckg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -51,7 +51,7 @@ body {
     z-index: 5;
 }
 .pump_button {
-    background-image: url(resources/pump_button.png);
+    background-image: url(../resources/pump_button.png);
     color: #2f292b;
     font-weight: bolder;
     background-size: 94% auto;
@@ -103,13 +103,13 @@ body {
 }
 @font-face {
     font-family: 'AppleNewIslandRegular';
-    src: url('resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+    src: url('../resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
 }
 @font-face {
     font-family: 'CreamySugar';
-    src: url('resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+    src: url('../resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
 }
 @font-face {
     font-family: 'LobsterFugu';
-    src: url('resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+    src: url('../resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
 }

@@ -1,14 +1,21 @@
-body{
-    background-image: url(https://i.postimg.cc/fLJzXwSs/bcgr.png);
-    background-color: #232b2b;
+body, html{
+    background-image: url(/room/resources/shelf.png);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
     font-family: 'LobsterFugu', serif;
     font-size: x-large;
     position: relative;
     margin: 0;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
+    padding: 0;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+
 h1 {
     font-family: "Retroma Vibes" , serif;
     font-size: 100px;
@@ -26,18 +33,19 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     padding: 20px;
-    align-items: center;
     position: relative;
-    width: 80vw;
-    height: 90vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: scroll;
-    scrollbar-width: none;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    transform: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
     gap: 10px;
-    min-height: 100vh;
 }
 
 .row {
@@ -108,7 +116,7 @@ p {
 }
 
 .room {
-    background-image: url('../resources/Room.png');
+    background-image: url('../../resources/Room.png');
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
@@ -123,7 +131,7 @@ p {
     z-index: 1;
 }
 .me {
-    background-image: url('../resources/me.png');
+    background-image: url('../../resources/me.png');
     cursor: pointer;
     position: absolute;
     background-color: transparent;
@@ -138,15 +146,15 @@ p {
     z-index: 2;
 }
 .me:hover {
-     transform: scale(1.03);
+    transform: scale(1.03);
 
 }
 .clickable {
-     position: absolute;
-     z-index: 3;
-     display: flex;
-     background-color: transparent;
-     pointer-events: auto;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    background-color: transparent;
+    pointer-events: auto;
     cursor: pointer;
 }
 
@@ -186,7 +194,7 @@ p {
 }
 
 .back {
-    background-image: url('../resources/back.png');
+    background-image: url('../../resources/back.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -214,72 +222,21 @@ p {
 
 @font-face {
     font-family: 'AppleNewIslandRegular';
-    src: url('../resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+    src: url('../../resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
 }
 @font-face {
     font-family: 'CreamySugar';
-    src: url('../resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+    src: url('../../resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
 }
 @font-face {
     font-family: 'LobsterFugu';
-    src: url('../resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+    src: url('../../resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Retroma Vibes';
-    src: url('../resources/fonts/Retroma Vibes.ttf') format('truetype');
+    src: url('../../resources/fonts/Retroma Vibes.ttf') format('truetype');
 }
 
 .dashed{
     border: 2px dashed black;
-}
-/* https://aleclownes.com/2017/02/01/crt-display.html */
-@keyframes flicker {
-    0%, 100% {
-        opacity: 0.8;
-    }
-    50% {
-        opacity: 1;
-    }
-}
-
-@keyframes textShadow {
-    0%, 100% {
-        text-shadow: 0.4px 0 1px rgba(0,30,255,0.3), -0.4px 0 1px rgba(255,0,80,0.2), 0 0 2px;
-    }
-    50% {
-        text-shadow: 0.6px 0 1px rgba(0,30,255,0.3), -0.6px 0 1px rgba(255,0,80,0.2), 0 0 2px;
-    }
-}
-
-.crt::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(18, 16, 16, 0.05);
-    opacity: 0;
-    z-index: 2;
-    pointer-events: none;
-    animation: flicker 0.3s infinite;
-}
-
-.crt::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
-}
-
-.crt {
-    animation: textShadow 2s infinite;
 }
