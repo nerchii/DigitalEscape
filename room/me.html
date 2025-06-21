@@ -8,11 +8,14 @@
 
   <link rel="stylesheet" href="./css/style_me.css">
   <link rel="stylesheet" href="./css/crt.css">
+  <link rel="stylesheet" href="../css/glitchy_text.css">
   <link rel="stylesheet" href="../css/screen_width_warning.css">
 
   <link rel="icon" type="image/x-icon" href="../resources/favicon.png">
 
   <script src="../js/scrip.js" defer></script>
+  <script src="../js/glitchy_text.js" defer></script>
+
 </head>
 <body class="crt">
 
@@ -25,24 +28,25 @@
 
 <div class="container">
   <div class="ncont" style="margin-top: 370px; margin-left: 430px; width: 700px; height: 450px; ">
-    <h1>AbOuT mE</h1>
+    <div style="height: max(100px)" class="content" id="title"><h1>AbOuT mE</h1></div>
 
-    *this page is still under construction*
-
-    <span>hello, I am a 22 yo girl who does not like social media rly but still wants a place to post my art and pics and other creations.
+    <div class="content" id="text">
+      *this page is still under construction*<br> hello, I am a 22 yo girl who does not like social media rly but still wants a place to post my art and pics and other creations.
       Was interested in making a site since 2022, used to post my art on Tumblr but back then I didn’t rly know how to code, so any HTML I managed to "write" was mostly templates I found online.<br>
       <br>Now I'm attending IT college, so I know something now ayooooo. I'm still a beginner, so if it's not good, too bad.<br>
+    </div>
+    <br>
+    <img class="myImages" alt="certified cool person" style="max-width: 90%;display: block; margin: 0 auto; " src="../resources/Mclovin.png">
 
-      <br><img class="myImages" alt="certified cool person" style="max-width: 90%;display: block; margin: 0 auto; " src="../resources/Mclovin.png">
-
-      <br><h2>Some of my hobbies:</h2>
+    <div class="content" id="text">
+      <h2>Some of my hobbies:</h2>
       <ul>
         <li>Drawing (especially digital drawing), be sure to check out my <a href="../drawings.html">drawings</a> page</li>
         <li>Collecting cool stuff I find cool, or <em>find..</em> on the street</li>
         <li>Sewing and decorating my clothes/accessories</li>
         <li>also making plushies ig, not rly good at that yet unfortunately</li>
       </ul>
-    </span>
+    </div>
 
     <! -- section -->
     <section class="photo-group" >

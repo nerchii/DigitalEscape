@@ -1,0 +1,19 @@
+/*code for this effect:*/
+/*https://codepen.io/stywb/pen/poqPJvW*/
+
+.content{
+    /*font-family: monospace;*/
+    padding: 6%;;
+}
+
+#title{
+    font-family: "Retroma Vibes", cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size : 4em;
+}
+
+#text{
+    font-size : 1em;
+    text-transform: lowercase;
+}
