@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://i.postimg.cc/X76ptZMW/111.png);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: LobsterFugu, serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+/*.bunny {*/
+/*    width: 40vw;*/
+/*    max-width: 300px;*/
+/*    height: auto;*/
+/*    margin: 1rem auto;*/
+/*    display: block;*/
+/*    transition: transform 0.2s ease;*/
+/*}*/
+/*.bunny:hover {*/
+/*    transform: scale(1.02);*/
+/*}*/
+
+.button1, .button2 {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'AppleNewIslandRegular', sans-serif;
+    font-size: 1.1rem;
+    border: none;
+    margin: 10px;
+    transition: transform 0.2s ease;
+}
+.button1 {
+    background-image: url("https://i.postimg.cc/t4fWTJmc/b1-v2.png");
+}
+.button2 {
+    background-image: url("https://i.postimg.cc/hGdx7nkt/b2-v2.png");
+}
+.button1:hover {
+    transform: rotate(2deg);
+}
+.button2:hover {
+    transform: rotate(-2deg);
+}
+.button1:active, .button2:active {
+    transform: scale(0.95);
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 70vh;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem;
+}
+
+.paper-wrapper {
+    position: relative;
+    width: 850px;
+    height: 80vh;
+    overflow-y: auto;
+
+}
+
+.container, .paper-wrapper {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar,
+.paper-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/*slika otragra*/
+.paper-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    height: auto;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/*sce unutar slike*/
+.content-inside {
+    position: relative;
+    padding: 10rem 2rem 2rem 2rem;
+    width: 70%;
+    max-width: 650px;
+    box-sizing: border-box;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.container {
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #414141;
+    font-family: 'AppleNewIslandRegular', sans-serif;
+}
+
+h4 {
+    font-family: 'Retroma Vibes', serif;
+    color: #414141;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+p {
+    color: #414141;
+    line-height: 1.6;
+}
+
+.dashed {
+    border: 2px dashed black;
+    margin: 1rem 0;
+}
+
+.badges img {
+    height: 35px;
+    margin: 0 5px;
+}
+
+.tv-img {
+    width: 100%;
+    max-width: 560px;
+    display: block;
+    margin: 0 auto;
+}
+
+.caprisun {
+    width: 100px;
+    margin: 1rem auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #414141;
+}
+footer ul {
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+}
+footer a {
+    color: #414141;
+    text-decoration: underline;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'AppleNewIslandRegular';
+    src: url('resources/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CreamySugar';
+    src: url('resources/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LobsterFugu';
+    src: url('resources/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Retroma Vibes';
+    src: url('resources/fonts/Retroma Vibes.ttf') format('truetype');
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .bunny {
+        width: 70vw;
+    }
+
+    .button1, .button2 {
+        width: 120px;
+        height: 120px;
+        font-size: 0.9rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .tv-img {
+        max-width: 100%;
+    }
+
+    .caprisun {
+        width: 80px;
+    }
+
+}
