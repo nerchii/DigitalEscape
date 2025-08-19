@@ -44,7 +44,6 @@
       border-right: 0.08em solid #000;
     }
 
-    /* Pokreće se animacija samo kada dodamo klasu .active */
     .typewriter.active::after {
       animation: typing 2s steps(var(--chars)) forwards,
       blink 0.9s step-end infinite;
@@ -91,19 +90,16 @@
 <script>
   const explosion = document.querySelector('.explosion');
   const typewriter = document.querySelector('.typewriter');
-  const typingDuration = 2000; // trajanje tipkanja u ms
+  const typingDuration = 2000;
 
   let animationStarted = false;
 
-  // Pokreni animacije na prvi klik
   document.body.addEventListener('click', () => {
-    if (animationStarted) return; // sprečava ponovni klik
+    if (animationStarted) return;
     animationStarted = true;
 
-    // Pokreće tipkanje
     typewriter.classList.add('active');
 
-    // Pokreće eksploziju nakon tipkanja + 600ms
     setTimeout(() => {
       explosion.style.opacity = 1;
     }, typingDuration + 600);
