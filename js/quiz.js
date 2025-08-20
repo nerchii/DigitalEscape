@@ -5,23 +5,23 @@ const quizData = [
             { text: "Spring, time to frolic and plot world domination yippieeee", type: "lazy" },
             { text: "Summer (you are going to hell for that opinion)", type: "nerdy" },
             { text: "Autumn, i like watching nature die", type: "goth" },
-            { text: "Winter, i dont have sm funny to say for this one rip", type: "sweet" }
+            { text: "Winter, i dont have sm funny to say for this one rip", type: "gamer" }
         ]
     },
     {
         question: "2. Do you prefer mornings or nights?",
         options: [
-            { text: "Mornings", type: "nerdy" },
+            { text: "Mornings", type: "sweet" },
             { text: "Nights", type: "lazy" },
             { text: "Twilight, the mysterious hour", type: "goth" },
             { text: "Time is a social construct dumbass", type: "edgy" },
-            { text: "none.", type: "edgy" },
+            { text: "none.", type: "gamer" },
         ]
     },
     {
         question: "3. Do you even like carrots???",
         options: [
-            { text: "ew,, vegetable", type: "nerdy" },
+            { text: "ew,, vegetable", type: "gamer" },
             { text: "yeah", type: "sweet" },
             { text: "i only eat meat.", type: "goth" },
             { text: "i only eat human meat..", type: "edgy" },
@@ -34,7 +34,7 @@ const quizData = [
             { text: "sunny", type: "sweet" },
             { text: "rainy", type: "goth" },
             { text: "snowy", type: "lazy" },
-            { text: "foggy", type: "nerdy" },
+            { text: "foggy", type: "gamer" },
             { text: "no weather at all, just eternal darkness", type: "edgy" }
         ]
     },
@@ -44,15 +44,15 @@ const quizData = [
             { text: "Introverted, pls leave me alone", type: "lazy" },
             { text: "Extroverted.", type: "sweet" },
             { text: "Both", type: "sweet" },
-            { text: "Social interaction? nah fam", type: "nerdy" }
+            { text: "Social interaction? nah fam", type: "gamer" }
         ]
     },
     {
         question: "6. Sweet or savoury snacks?",
         options: [
             { text: "sweet", type: "sweet" },
-            { text: "savoury", type: "lazy" },
-            { text: "H̵̦̻͝U̴̧̪̺̲̇̌M̸̛̩̱̼̟̭͛͂̋̆̕A̶̠̯̿̕N̵̨̼̱̪̋̿̑̒͝ ̶̟̱͆̎̾̚͝M̸̫͈̹̓̂È̸̛̂̏͜A̴͕̺͈̔͘T̸͎̰͕͈̼͑", type: "edgy" }, // skraceno
+            { text: "savoury", type: "gamer" },
+            { text: "H̵̦̻͝U̴̧̪̺̲̇̌M̸̛̩̱̼̟̭͛͂̋̆̕A̶̠̯̿̕N̵̨̼̱̪̋̿̑̒͝ ̶̟̱͆̎̾̚͝M̸̫͈̹̓̂È̸̛̂̏͜A̴͕̺͈̔͘T̸͎̰͕͈̼͑", type: "edgy" },
             { text: "i like both :)))))))))))))))))))))))))))))))))))))))", type: "nerdy" }
         ]
     },
@@ -62,6 +62,7 @@ const quizData = [
             { text: "I collect souls… just kidding… maybe", type: "goth" },
             { text: "Yes, my collection of random trash is thriving", type: "nerdy" },
             { text: "No, I am lame", type: "lazy" },
+            { text: "Every chest I see must be opened.", type: "nerdy" },
         ]
     },
     {
@@ -73,11 +74,22 @@ const quizData = [
             { text: "*hops into existential crisis*", type: "goth" },
             { text: "kys", type: "edgy" }
         ]
-    }
+    },
+    {
+        question: "9. What's your favourite beverage?",
+        options: [
+            { text: "Water", type: "lazy" },
+            { text: "Coffee", type: "nerdy" },
+            { text: "Tea", type: "sweet" },
+            { text: "Red wine, looks like blood hehe", type: "goth" },
+            { text: "Energy drinks until my heart explodes", type: "gamer" },
+            { text: "Balck void liquid????", type: "edgy" }
+        ]
+    },
 ];
 
 let currentQuestion = 0;
-const score = { sweet: 0, goth: 0, edgy: 0, lazy: 0, nerdy: 0 };
+const score = { sweet: 0, goth: 0, edgy: 0, lazy: 0, nerdy: 0, gamer: 0 };
 const quizDiv = document.getElementById("quiz");
 const resultDiv = document.getElementById("result");
 
@@ -112,7 +124,7 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/bNrfyPzc/Sweet-min.png"
            alt="sweet bunny"
-           style="max-width:400px; margin-top:8px;">
+           style="max-width:400px; margin-top:4px;">
     `;
     }
     if (highest === "goth") {
@@ -121,7 +133,7 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/yxY4S4cR/Emo-min.png"
            alt="goth bunny"
-           style="max-width:400px; margin-top:8px;">
+           style="max-width:400px; margin-top:4px;">
     `;
     }
     if (highest === "edgy") {
@@ -130,7 +142,7 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/RFTxFV69/Edgy-min.png"
            alt="edgy bunny"
-           style="max-width:400px; margin-top:8px;">
+           style="max-width:400px; margin-top:4px;">
     `;
     }
     if (highest === "lazy") {
@@ -139,7 +151,7 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/SRT06Tfv/Lazy-min.png"
            alt="lazy bunny"
-           style="max-width:400px; margin-top:8px;">
+           style="max-width:400px; margin-top:4px;">
     `;
     }
     if (highest === "nerdy") {
@@ -148,7 +160,16 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/2j2fNyN7/Nerdy-min.png"
            alt="nerdy bunny"
-           style="max-width:400px; margin-top:8px;">
+           style="max-width:400px; margin-top:4px;">
+    `;
+    }
+    if (highest === "gamer") {
+        resultText = `
+      <p>You are a gamer bunny!!</p>
+      <br>
+      <img src="https://i.postimg.cc/RqrjtMhg/Gamer.png"
+           alt="gamer bunny"
+           style="max-width:400px; margin-top:4px;">
     `;
     }
     resultDiv.innerHTML = resultText;
