@@ -228,85 +228,84 @@ span {
 }
 
 
-/*!*phone*!*/
-/*@media (max-width: 800px) {*/
-/*    * {*/
-/*        box-sizing: border-box;*/
-/*    }*/
+/*phone*/
+@media (max-width: 800px) {
+    * {
+        box-sizing: border-box;
+    }
 
-/*    html, body {*/
-/*        max-width: 100%;*/
-/*        overflow-x: hidden;*/
-/*        margin: 0;*/
-/*        padding: 0;*/
-/*        height: auto;*/
-/*        min-height: 100vh;*/
-/*    }*/
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        min-height: 100vh;
+    }
 
-/*    .bunny,*/
-/*    .draggable_div {*/
-/*        display: none;*/
-/*    }*/
+    .bunny,
+    .draggable_div {
+        display: none;
+    }
 
-/*    body {*/
-/*        background: none;*/
-/*        background-size: contain;*/
-/*        display: block;*/
+    body {
+        background-image: url(/src/assets/site_assets/note1.jpg);
+        background-size: contain;
+        display: block;
+        padding: 20px 0;
+        height: auto;
+    }
 
-/*        padding: 20px 0;*/
-/*        height: auto;*/
-/*    }*/
+    .container {
+        background-image: url(../assets/site_assets/Paper_v2_mobile.png);
+        overflow-y: scroll;
+        position: relative;
+        width: 95%;
+        max-width: 600px;
+        padding: 1rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        background-size: contain;
+    }
 
-/*    .container {*/
-/*        overflow-y: scroll;*/
-/*        background-image: url(../assets/Paper_v2_mobile.png);*/
-/*        position: relative;*/
-/*        width: 95%;*/
-/*        max-width: 600px;*/
-/*        padding: 1rem;*/
-/*        margin: 0 auto;*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*        height: auto;*/
-/*        background-size: contain;*/
-/*    }*/
+    .ncont,
+    .navcont {
+        position: relative;
+        margin: 1.5rem auto;
+        width: 95%;
+        max-width: 600px;
+        height: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        left: 0;
+        top: 0;
+    }
 
-/*    .ncont,*/
-/*    .navcont {*/
-/*        position: relative;*/
-/*        margin: 1.5rem auto;*/
-/*        width: 95%;*/
-/*        max-width: 600px;*/
-/*        height: auto;*/
-/*        overflow-y: auto;*/
-/*        overflow-x: hidden;*/
-/*        left: 0;*/
-/*        top: 0;*/
-/*    }*/
+    .navcont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
 
-/*    .navcont {*/
-/*        display: flex;*/
-/*        flex-wrap: wrap;*/
-/*        justify-content: center;*/
-/*        gap: 1rem;*/
-/*    }*/
+    .button1,
+    .button2,
+    .back {
+        width: 40vw;
+        height: 40vw;
+        max-width: 140px;
+        max-height: 140px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
 
-/*    .button1,*/
-/*    .button2,*/
-/*    .back {*/
-/*        width: 40vw;*/
-/*        height: 40vw;*/
-/*        max-width: 140px;*/
-/*        max-height: 140px;*/
-/*    }*/
-/*    h1 {*/
-/*        font-size: 1.8rem;*/
-/*    }*/
-
-/*    p {*/
-/*        font-size: 16px;*/
-/*        padding: 10px;*/
-/*    }*/
-/*}*/
+    p {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
 

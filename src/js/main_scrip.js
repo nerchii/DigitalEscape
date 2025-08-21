@@ -1,8 +1,6 @@
 if (screen.width <= 480) {
-    window.location.href = 'mobile_index.html';
+    window.location.href = '../src/pages/mobile_index.html';
 }
-
-
 
 // draggable elements
 function dragElement(elmnt) {
