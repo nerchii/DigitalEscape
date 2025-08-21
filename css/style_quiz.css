@@ -1,26 +1,26 @@
 body {
     background-image: url(https://i.postimg.cc/RVFzQyXv/caprisun.gif);
     background-repeat: repeat;
-    background-size: 300px auto;
+    background-size: 250px auto;
+    margin: 0;
 }
+
 p{
-    font-size: 40px;
+    font-size: 2rem;
 }
-.navcont {
-    margin-left: 1200px;
-    margin-top: -180px;
-}
+
 .quiz-container {
     padding: 20px;
     margin: 0 auto;
     font-family: 'LobsterFugu', cursive;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bolder;
+    max-width: 800px;
 }
 
 .quiz-container .question {
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-bottom: 10px;
     color: #414141;
     line-height: 2;
@@ -33,7 +33,7 @@ p{
     padding: 12px 20px;
     font-size: 2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     color: #414141;
     transition: 0.3s;
@@ -48,4 +48,42 @@ p{
     font-size: 3rem;
     margin-top: 15px;
     color: #414141;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: 150px auto;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    .quiz-container {
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+    .quiz-container .question {
+        font-size: 3rem;
+        line-height: 1.4;
+    }
+
+    .quiz-container .options button {
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+
+    .result {
+        font-size: 1.4rem;
+    }
+
+    .bunny {
+        display: none;
+    }
+
+    .container {
+        left: 50%;
+        transform: translateX(-60%);
+    }
 }
