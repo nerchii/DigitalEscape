@@ -124,7 +124,10 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/bNrfyPzc/Sweet-min.png"
            alt="sweet bunny"
-           style="max-width:400px; margin-top:4px;">
+           width="400"
+           height="400"
+           style="max-width:100%; margin-top:4px;"
+           loading="lazy">
     `;
     }
     if (highest === "goth") {
@@ -133,7 +136,10 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/yxY4S4cR/Emo-min.png"
            alt="goth bunny"
-           style="max-width:400px; margin-top:4px;">
+           width="400"
+           height="400"
+           style="max-width:100%; margin-top:4px;"
+           loading="lazy">
     `;
     }
     if (highest === "edgy") {
@@ -142,7 +148,10 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/RFTxFV69/Edgy-min.png"
            alt="edgy bunny"
-           style="max-width:400px; margin-top:4px;">
+           width="400"
+           height="400"
+           style="max-width:100%; margin-top:4px;"
+           loading="lazy">
     `;
     }
     if (highest === "lazy") {
@@ -151,7 +160,10 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/SRT06Tfv/Lazy-min.png"
            alt="lazy bunny"
-           style="max-width:400px; margin-top:4px;">
+           width="400"
+           height="400"
+           style="max-width:100%; margin-top:4px;"
+           loading="lazy">
     `;
     }
     if (highest === "nerdy") {
@@ -160,7 +172,10 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/2j2fNyN7/Nerdy-min.png"
            alt="nerdy bunny"
-           style="max-width:400px; margin-top:4px;">
+           width="400"
+           height="400"
+           style="max-width:100%; margin-top:4px;"
+           loading="lazy">
     `;
     }
     if (highest === "gamer") {
@@ -169,7 +184,10 @@ function showResult() {
       <br>
       <img src="https://i.postimg.cc/RqrjtMhg/Gamer.png"
            alt="gamer bunny"
-           style="max-width:400px; margin-top:4px;">
+           width="400"
+           height="400"
+           style="max-width:100%; margin-top:4px;"
+           loading="lazy">
     `;
     }
     resultDiv.innerHTML = resultText;

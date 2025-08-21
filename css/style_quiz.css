@@ -1,5 +1,6 @@
 body {
     background-image: url(https://i.postimg.cc/RVFzQyXv/caprisun.gif);
+    background-color: #d8d5f0;
     background-repeat: repeat;
     background-size: 250px auto;
     margin: 0;
@@ -20,7 +21,7 @@ p{
 }
 
 .quiz-container .question {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
     color: #414141;
     line-height: 2;
@@ -52,7 +53,8 @@ p{
 
 @media (max-width: 768px) {
     body {
-        background-size: 150px auto;
+        width: 80%;
+        background-size: 400px auto;
     }
 
     p {
