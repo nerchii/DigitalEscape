@@ -28,18 +28,6 @@ header {
     margin-bottom: 2rem;
 }
 
-/*.bunny {*/
-/*    width: 40vw;*/
-/*    max-width: 300px;*/
-/*    height: auto;*/
-/*    margin: 1rem auto;*/
-/*    display: block;*/
-/*    transition: transform 0.2s ease;*/
-/*}*/
-/*.bunny:hover {*/
-/*    transform: scale(1.02);*/
-/*}*/
-
 .button1, .button2 {
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -63,15 +51,7 @@ header {
 .button2 {
     background-image: url("https://i.postimg.cc/hGdx7nkt/b2-v2.png");
 }
-.button1:hover {
-    transform: rotate(2deg);
-}
-.button2:hover {
-    transform: rotate(-2deg);
-}
-.button1:active, .button2:active {
-    transform: scale(0.95);
-}
+
 
 .container {
     max-width: 900px;
@@ -234,28 +214,3 @@ footer a {
 }
 
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-    .bunny {
-        width: 70vw;
-    }
-
-    .button1, .button2 {
-        width: 120px;
-        height: 120px;
-        font-size: 0.9rem;
-    }
-
-    .main-content {
-        padding: 1rem;
-    }
-
-    .tv-img {
-        max-width: 100%;
-    }
-
-    .caprisun {
-        width: 80px;
-    }
-
-}

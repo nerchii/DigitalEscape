@@ -51,10 +51,12 @@ p{
     color: #414141;
 }
 
-@media (max-width: 768px) {
-    body {
-        width: 80%;
-        background-size: 400px auto;
+@media (max-width: 800px) {
+    body, html {
+        background-size: 250px auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        align-content: center;
     }
 
     p {
@@ -63,17 +65,20 @@ p{
 
     .quiz-container {
         font-size: 3rem;
-        padding: 10px;
+        height: 700px;
     }
 
     .quiz-container .question {
         font-size: 3rem;
         line-height: 1.4;
+
     }
 
     .quiz-container .options button {
         font-size: 2.5rem;
-        padding: 10px;
+        margin: 10px;
+        padding: 20px;
+
     }
 
     .result {
@@ -85,7 +90,9 @@ p{
     }
 
     .container {
-        left: 50%;
-        transform: translateX(-60%);
+        background-size: 700px;
+        max-width: 100%;
+        padding: 20px;
+        margin: 0 auto;
     }
 }

@@ -1,6 +1,6 @@
-if (screen.width <= 480) {
-    window.location.href = 'mobile_index.html';
-}
+// if (screen.width <= 480) {
+//     window.location.href = 'mobile_index.html';
+// }
 
 
 
