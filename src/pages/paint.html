@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>♡♡ Digital escape ♡♡</title>
+
+    <link rel="stylesheet" href="../css/paint.css">
+
+    <link rel="icon" type="image/x-icon" href="../assets/site_assets/favicon.png">
+    <script>
+        if (screen.width <= 480) {
+            window.location.href = 'mobile_index.html';
+        }
+    </script>
+
+</head>
+<body>
+<! -- bottuns -->
+<div class="buttons" >
+    <div class="pump_button" id="clearBtn" style="margin-right: 20px">CLEAR</div>
+    <div class="pump_button" id="saveBtn" style="margin-left: 50px">SAVE</div>
+    <div class="pump_button" style="margin-right: 20px; font-size: 40px ">
+        <input type="color" id="colorPicker" value="#2f292b" style="position: absolute; width: 100%; height: 100%; opacity: 0; cursor: pointer;">
+        PICK A<br>COLOR
+    </div>
+</div>
+<! -- ... -->
+
+<! -- main container -->
+<div class="container"></div>
+<div class="container_behind">
+
+    <! -- paint contolls -->
+    <div class="controls">
+        <span style="font-family: 'AppleNewIslandRegular', sans-serif; font-size: 25px; font-weight: bolder"> BRUSH SIZE: </span>
+        <input type="range" id="brushSize" min="1" max="10" value="5">
+    </div>
+    <! -- ... -->
+
+    <! -- canvas -->
+    <canvas id="paintCanvas"></canvas>
+    <! -- ... -->
+
+
+<! -- gallery -->
+</div>
+<div class="gallery" id="gallery"> </div>
+<div class="container_behind_bckg">
+</div>
+<! -- ... -->
+
+
+<script>
+    const canvas = document.getElementById('paintCanvas');
+    const ctx = canvas.getContext('2d');
+    const colorPicker = document.getElementById('colorPicker');
+    const brushSize = document.getElementById('brushSize');
+    const clearBtn = document.getElementById('clearBtn');
+    const saveBtn = document.getElementById('saveBtn');
+    const gallery = document.getElementById('gallery');
+
+    canvas.width = 750;
+    canvas.height = 300;
+
+    let painting = false;
+
+    function startPosition(e) {
+        painting = true;
+        draw(e);
+    }
+    function endPosition() {
+        painting = false;
+        ctx.beginPath();
+    }
+    function draw(e) {
+        if (!painting) return;
+        ctx.lineWidth = brushSize.value;
+        ctx.lineCap = "round";
+        ctx.strokeStyle = colorPicker.value;
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(e.offsetX, e.offsetY);
+    }
+
+    canvas.addEventListener('mousedown', startPosition);
+    canvas.addEventListener('mouseup', endPosition);
+    canvas.addEventListener('mousemove', draw);
+
+    clearBtn.addEventListener('click', () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+
+    saveBtn.addEventListener('click', () => {
+        const imgData = canvas.toDataURL("image/png");
+        const img = document.createElement('img');
+        img.src = imgData;
+        gallery.appendChild(img);
+    });
+
+</script>
+
+</body>
+</html>
+

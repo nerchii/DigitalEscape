@@ -1,0 +1,103 @@
+body{
+    background-image: url(https://i.postimg.cc/4ycHXzyW/chippy.png);
+    background-color: #232b2b;
+    font-family: 'LobsterFugu', serif;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-position: center;
+    color: #414141;
+
+}
+.main_div {
+    z-index: 1;
+    width: 740px;
+    height: 1000px;
+    padding: 10px;
+    position: relative;
+    user-select: none;
+}
+.main_div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://i.postimg.cc/Y0pmVWhv/Notepad-v2.png");
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.sitemap {
+    font-size: 32px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: -25px;
+    width: 870px;
+    height: 700px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+@font-face {
+    font-family: 'AppleNewIslandRegular';
+    src: url('../assets/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CreamySugar';
+    src: url('../assets/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LobsterFugu';
+    src: url('../assets/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+}
+
+h2 {
+    text-align: center;
+    align-content: end;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 0px;
+}
+.dashed{
+    border: 2px dashed black;
+}
+
+.back {
+    background-image: url(../assets/site_assets/back.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    border: 0;
+    background-color: transparent;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    user-select: none;
+    font-family: 'AppleNewIslandRegular', sans-serif;
+    transition: transform 0.2s ease;
+    z-index: 9999;
+    position: absolute;
+    bottom: 70px;
+    right: -200px;
+}
+.back:hover{
+    transform: scale(1.01);
+}
+.back:active{
+    transform: scale(0.95);
+}
