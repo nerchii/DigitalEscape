@@ -9,6 +9,9 @@ body {
 p{
     font-size: 2rem;
 }
+/*.container {*/
+/*    background-image: url(/src/assets/site_assets/Paper_v2_mobile.png);*/
+/*}*/
 
 .quiz-container {
     padding: 20px;
@@ -90,6 +93,7 @@ p{
     }
 
     .container {
+        background-image: url(/src/assets/site_assets/Paper_v2_mobile.png);
         background-size: 700px;
         max-width: 100%;
         padding: 20px;

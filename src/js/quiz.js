@@ -2,8 +2,8 @@ const quizData = [
     {
         question: "1. What's your favourite time of the year?",
         options: [
-            { text: "Spring, time to frolic and plot world domination yippieeee", type: "lazy" },
-            { text: "Summer (you are going to hell for that opinion)", type: "nerdy" },
+            { text: "Spring, time to frolic and plot world domination yippieeee", type: "edgy" },
+            { text: "Summer (you are going to hell for that opinion)", type: "sweet" },
             { text: "Autumn, i like watching nature die", type: "goth" },
             { text: "Winter, i dont have sm funny to say for this one rip", type: "gamer" }
         ]
@@ -12,10 +12,10 @@ const quizData = [
         question: "2. Do you prefer mornings or nights?",
         options: [
             { text: "Mornings", type: "sweet" },
-            { text: "Nights", type: "lazy" },
+            { text: "Nights", type: "gamer" },
             { text: "Twilight, the mysterious hour", type: "goth" },
             { text: "Time is a social construct dumbass", type: "edgy" },
-            { text: "none.", type: "gamer" },
+            { text: "none.", type: "lazy" },
         ]
     },
     {
@@ -23,7 +23,7 @@ const quizData = [
         options: [
             { text: "ew,, vegetable", type: "gamer" },
             { text: "yeah", type: "sweet" },
-            { text: "i only eat meat.", type: "goth" },
+            { text: "i only eat meat.", type: "nerdy" },
             { text: "i only eat human meat..", type: "edgy" },
             { text: "Ğ̴̥̘͉̫̻̲̀I̵̠̖̮̩̻̟͌V̷̭̫̤̫̦̟̓̔͒Ẻ̶̦͆̃̀̃ ̷̗̟̺̖͙́̓M̵̜̎È̶͉̹̦̓̈́̔̕ ̵̪̜̔̈́̍͜͝͠H̸̨̜̞̯̥̎́́͐͌͠Ű̷̧̡̨̗̖̳̍̕͠M̵̡̧̟͖̣̪͌̅̑͗̚͘Ä̴̜̜̖͑͛N̸͎̠̳̽͑̈̈́̈́͝ ̸͈̒̀̏M̷͓̖̯͕͋͂E̵̡̛̖̽͛͌͂͜Ḁ̶̡̭̈̀͊̈͜Ť̷̢͇͙͈̮͛", type: "edgy" }
         ]
@@ -31,10 +31,11 @@ const quizData = [
     {
         question: "4. What's your favourite type of weather?",
         options: [
+            { text: "stupid question.", type: "edgy" },
             { text: "sunny", type: "sweet" },
-            { text: "rainy", type: "goth" },
+            { text: "rainy", type: "gamer" },
             { text: "snowy", type: "lazy" },
-            { text: "foggy", type: "gamer" },
+            { text: "foggy", type: "goth" },
             { text: "no weather at all, just eternal darkness", type: "edgy" }
         ]
     },
@@ -43,7 +44,8 @@ const quizData = [
         options: [
             { text: "Introverted, pls leave me alone", type: "lazy" },
             { text: "Extroverted.", type: "sweet" },
-            { text: "Both", type: "sweet" },
+            { text: "Both", type: "goth" },
+            { text: "none, why are you asking this", type: "nerdy" },
             { text: "Social interaction? nah fam", type: "gamer" }
         ]
     },
@@ -53,7 +55,9 @@ const quizData = [
             { text: "sweet", type: "sweet" },
             { text: "savoury", type: "gamer" },
             { text: "H̵̦̻͝U̴̧̪̺̲̇̌M̸̛̩̱̼̟̭͛͂̋̆̕A̶̠̯̿̕N̵̨̼̱̪̋̿̑̒͝ ̶̟̱͆̎̾̚͝M̸̫͈̹̓̂È̸̛̂̏͜A̴͕̺͈̔͘T̸͎̰͕͈̼͑", type: "edgy" },
-            { text: "i like both :)))))))))))))))))))))))))))))))))))))))", type: "nerdy" }
+            { text: "i like both :)))))))))))))))))))))))))))))))))))))))", type: "lazy" },
+            { text: "i dont snack.", type: "goth" },
+
         ]
     },
     {
@@ -62,7 +66,7 @@ const quizData = [
             { text: "I collect souls… just kidding… maybe", type: "goth" },
             { text: "Yes, my collection of random trash is thriving", type: "nerdy" },
             { text: "No, I am lame", type: "lazy" },
-            { text: "Every chest I see must be opened.", type: "nerdy" },
+            { text: "Every chest I see must be opened.", type: "gamer" },
         ]
     },
     {
@@ -83,7 +87,8 @@ const quizData = [
             { text: "Tea", type: "sweet" },
             { text: "Red wine, looks like blood hehe", type: "goth" },
             { text: "Energy drinks until my heart explodes", type: "gamer" },
-            { text: "Balck void liquid????", type: "edgy" }
+            { text: "Black void liquid????", type: "edgy" },
+            { text: "I dont consume liquids", type: "edgy" }
         ]
     },
 ];
@@ -190,7 +195,18 @@ function showResult() {
            loading="lazy">
     `;
     }
-    resultDiv.innerHTML = resultText;
+    const total = Object.values(score).reduce((a, b) => a + b, 0);
+    let percentages = "<div style='margin-top:15px;'><h3>Other bunny vibes:</h3>";
+    for (let type in score) {
+        if (type !== highest && total > 0) {
+            let percent = Math.round((score[type] / total) * 100);
+
+            percentages += `<p>${type}: ${percent}%</p>`;
+        }
+    }
+    percentages += "</div>";
+
+    resultDiv.innerHTML = resultText + percentages;
 }
 loadQuestion();
 
