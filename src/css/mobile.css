@@ -44,15 +44,13 @@ p {
 }
 
 /*phone*/
-@media (max-width: 900px) {
-
-
+@media (max-width: 980px) {
     .container {
         position: absolute;
         width: 95%;
         height: 100%;
         margin: 0 auto;
-        background-image: url(/src/assets/site_assets/Mobile.png);
+        background-image: url("https://i.postimg.cc/C1WG57Cb/Mobile-min.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -87,6 +85,13 @@ p {
     }
 
 }
+@media (min-width: 980px) {
+    body{
+        font-size: x-large;
+    }
+
+}
+
 
 
 @font-face {
