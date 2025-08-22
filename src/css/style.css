@@ -227,95 +227,95 @@ span {
 }
 
 
-/*phone*/
-@media (max-width: 800px) {
-    * {
-        box-sizing: border-box;
-    }
+/*!*phone*!*/
+/*@media (max-width: 800px) {*/
+/*    * {*/
+/*        box-sizing: border-box;*/
+/*    }*/
 
-    html, body {
-        max-width: 100%;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-        height: auto;
-        min-height: 100vh;
-        font-size: 0.8rem;
+/*    html, body {*/
+/*        max-width: 100%;*/
+/*        overflow: hidden;*/
+/*        margin: 0;*/
+/*        padding: 0;*/
+/*        height: auto;*/
+/*        min-height: 100vh;*/
+/*        font-size: 0.8rem;*/
 
-    }
+/*    }*/
 
-    .bunny,
-    .draggable_div {
-        display: none;
-    }
+/*    .bunny,*/
+/*    .draggable_div {*/
+/*        display: none;*/
+/*    }*/
 
-    body {
-        background-image: url(/src/assets/site_assets/note1.jpg);
-        background-size: contain;
-        display: block;
-        padding: 20px 0;
-        height: auto;
-    }
+/*    body {*/
+/*        background-image: url(/src/assets/site_assets/note1.jpg);*/
+/*        background-size: contain;*/
+/*        display: block;*/
+/*        padding: 20px 0;*/
+/*        height: auto;*/
+/*    }*/
 
-    .container {
-        background-image: none;
-        overflow-y: scroll;
-        position: relative;
-        width: 95%;
-        max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        background-size: contain;
-        margin: 20rem auto 0 auto;
+/*    .container {*/
+/*        background-image: none;*/
+/*        overflow-y: scroll;*/
+/*        position: relative;*/
+/*        width: 95%;*/
+/*        max-width: 600px;*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        height: auto;*/
+/*        background-size: contain;*/
+/*        margin: 20rem auto 0 auto;*/
 
-    }
+/*    }*/
 
-    .ncont{
-        margin: 9rem auto 0 auto;
-        position: relative;
-        width: 100%;
-        max-width: 700px;
-        max-height: 700px;
-        height: auto;
-        overflow-y: auto;
-        overflow-x: hidden;
-        scrollbar-width: none;
-        padding: 1rem;
+/*    .ncont{*/
+/*        margin: 9rem auto 0 auto;*/
+/*        position: relative;*/
+/*        width: 100%;*/
+/*        max-width: 700px;*/
+/*        max-height: 700px;*/
+/*        height: auto;*/
+/*        overflow-y: auto;*/
+/*        overflow-x: hidden;*/
+/*        scrollbar-width: none;*/
+/*        padding: 1rem;*/
 
-    }
+/*    }*/
 
-    .navcont {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-        position: relative;
-        width: 100%;
-        max-width: 700px;
-        height: auto;
-        overflow-y: auto;
-        overflow-x: hidden;
-        scrollbar-width: none;
-        margin: 0.5rem 0;
-        padding: 0.5rem;
-    }
+/*    .navcont {*/
+/*        display: flex;*/
+/*        flex-wrap: wrap;*/
+/*        justify-content: center;*/
+/*        gap: 0.5rem;*/
+/*        position: relative;*/
+/*        width: 100%;*/
+/*        max-width: 700px;*/
+/*        height: auto;*/
+/*        overflow-y: auto;*/
+/*        overflow-x: hidden;*/
+/*        scrollbar-width: none;*/
+/*        margin: 0.5rem 0;*/
+/*        padding: 0.5rem;*/
+/*    }*/
 
-    .button1,
-    .button2,
-    .back {
-        font-size: 0.7rem;
-        width: 20vw;
-        height: 20vw;
-    }
-    h1 {
-        font-size: 1.8rem;
-    }
+/*    .button1,*/
+/*    .button2,*/
+/*    .back {*/
+/*        font-size: 0.7rem;*/
+/*        width: 20vw;*/
+/*        height: 20vw;*/
+/*    }*/
+/*    h1 {*/
+/*        font-size: 1.8rem;*/
+/*    }*/
 
-    p {
-        font-size: 16px;
-        padding: 10px;
-    }
-}
+/*    p {*/
+/*        font-size: 16px;*/
+/*        padding: 10px;*/
+/*    }*/
+/*}*/
 
