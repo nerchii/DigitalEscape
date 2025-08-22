@@ -1,4 +1,4 @@
-if (screen.width <= 980) {
+if (screen.width <= 600) {
     window.location.href = 'mobile_index.html';
 }
 

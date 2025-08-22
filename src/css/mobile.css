@@ -44,7 +44,7 @@ p {
 }
 
 /*phone*/
-@media (max-width: 980px) {
+@media (max-width: 600px) {
     .container {
         position: absolute;
         width: 95%;
