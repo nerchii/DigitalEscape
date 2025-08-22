@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'AppleNewIslandRegular';
+    src: url('../assets/fonts/apple-new-island-font/AppleNewIslandRegular-5yXpj.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CreamySugar';
+    src: url('../assets/fonts/creamy-sugar-font/CreamySugar-gxnGR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LobsterFugu';
+    src: url('../assets/fonts/lobster-fugu-font/LobsterFuguRegular-JpaJ7.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Retroma Vibes';
+    src: url('../assets/fonts/Retroma Vibes.ttf') format('truetype');
+}
